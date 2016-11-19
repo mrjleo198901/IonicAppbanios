@@ -2,99 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="977d3811-68b7-41d6-acd7-1d01e0f84125" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\.bowerrc" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\config.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\debug.log" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\hooks\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\hooks\after_prepare\010_add_platform_class.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\ionic.config.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\scss\ionic.app.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\css\style.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\img\ionic.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\js\app.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\js\controllers.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\css\ionic.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\css\ionic.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\fonts\ionicons.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\fonts\ionicons.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\fonts\ionicons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\fonts\ionicons.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\js\angular-ui\angular-ui-router.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\js\angular-ui\angular-ui-router.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\js\angular\angular-animate.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\js\angular\angular-animate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\js\angular\angular-resource.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\js\angular\angular-resource.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\js\angular\angular-sanitize.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\js\angular\angular-sanitize.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\js\angular\angular.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\js\angular\angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\js\ionic-angular.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\js\ionic-angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\js\ionic.bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\js\ionic.bundle.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\js\ionic.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\js\ionic.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_action-sheet.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_animations.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_backdrop.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_badge.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_bar.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_button-bar.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_button.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_checkbox.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_form.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_items.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_list.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_loading.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_menu.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_modal.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_platform.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_popover.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_popup.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_progress.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_radio.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_range.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_refresher.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_reset.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_scaffolding.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_select.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_slide-box.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_slides.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_spinner.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_tabs.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_toggle.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_transitions.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_type.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_util.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\ionic.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\ionicons\_ionicons-font.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\ionicons\_ionicons-icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\ionicons\_ionicons-variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\scss\ionicons\ionicons.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\lib\ionic\version.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\service-worker.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\templates\browse.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\templates\login.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\templates\menu.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\templates\playlist.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\templates\playlists.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\AppBanios1\www\templates\search.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AppBaniosMobile/www/templates/login1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/IonicAppBanios.iml" afterPath="$PROJECT_DIR$/.idea/IonicAppBanios.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppBaniosMobile/www/js/app.js" afterPath="$PROJECT_DIR$/AppBaniosMobile/www/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppBaniosMobile/www/js/controllers.js" afterPath="$PROJECT_DIR$/AppBaniosMobile/www/js/controllers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IonicAppbanios.iws" />
@@ -114,9 +27,90 @@
   <component name="FavoritesManager">
     <favorites_list name="IonicAppbanios" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AppBaniosMobile/www/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.071429">
+              <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.59074074">
+              <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AppBaniosMobile/www/templates/login1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.2452831">
+              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AppBaniosMobile/www/templates/menu.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.981132">
+              <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AppBaniosMobile/www/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.3018866">
+              <caret line="37" column="30" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AppBaniosMobile/www/js/controllers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.0">
+              <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Html5" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/AppBaniosMobile/www/templates/login1.html" />
+        <option value="$PROJECT_DIR$/AppBaniosMobile/www/js/controllers.js" />
+        <option value="$PROJECT_DIR$/AppBaniosMobile/www/js/app.js" />
+        <option value="$PROJECT_DIR$/MobileBaniosRelease/www/index.html" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
   <component name="JsGulpfileManager">
@@ -127,8 +121,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="width" value="1377" />
-    <option name="height" value="744" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -153,7 +148,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -172,12 +166,45 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="MobileBaniosRelease" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IonicAppbanios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IonicAppbanios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobileBaniosRelease" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IonicAppbanios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IonicAppbanios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="AppBaniosMobile" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -187,6 +214,41 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JsTestDriver-test-runner" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
@@ -199,26 +261,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1377" height="744" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24943988" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24920969" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32952693" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32864866" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32622603" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -227,5 +290,55 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/AppBaniosMobile/www/templates/login1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.2452831">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AppBaniosMobile/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3018866">
+          <caret line="37" column="30" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AppBaniosMobile/www/templates/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.981132">
+          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AppBaniosMobile/www/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.0">
+          <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AppBaniosMobile/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.071429">
+          <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.59074074">
+          <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

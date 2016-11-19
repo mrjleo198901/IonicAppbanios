@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/IonicAppBanios.iml" filepath="$PROJECT_DIR$/.idea/IonicAppBanios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/IonicAppbanios.iml" filepath="$PROJECT_DIR$/.idea/IonicAppbanios.iml" />
     </modules>
   </component>
 </project>

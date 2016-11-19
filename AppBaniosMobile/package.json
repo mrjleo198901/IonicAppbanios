@@ -1,7 +1,7 @@
 {
-  "name": "appbanios1",
+  "name": "appbaniosmobile",
   "version": "1.1.1",
-  "description": "AppBanios1: An Ionic project",
+  "description": "AppBaniosMobile: An Ionic project",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^2.0.4",
@@ -17,10 +17,10 @@
   "cordovaPlugins": [
     "cordova-plugin-whitelist",
     "cordova-plugin-console",
-    "cordova-plugin-device",
     "cordova-plugin-statusbar",
-    "cordova-plugin-splashscreen",
-    "ionic-plugin-keyboard"
+    "cordova-plugin-device",
+    "ionic-plugin-keyboard",
+    "cordova-plugin-splashscreen"
   ],
   "cordovaPlatforms": []
 }

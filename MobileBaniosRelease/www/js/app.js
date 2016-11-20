@@ -50,10 +50,13 @@ app.controller('Redirect', function($scope,$http,myProvider) {
   }
   $scope.indexPage=function(){
     console.log('entra');
-    window.location='/index.html';
+    window.location='../index.html';
   }
 
-
+  $scope.ciudadesRedirect=function(){
+    console.log('entra');
+    window.location='./ciudades.html';
+  }
 
   //Sign In//
 

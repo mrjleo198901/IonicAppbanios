@@ -4,5 +4,11 @@
     <file url="file://$PROJECT_DIR$/AppBaniosMobile/www/js/app.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AppBaniosMobile/www/js/controllers.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AppBaniosMobile/www/templates/login1.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/redirections.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/templateApp.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/inicio.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/singin.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/singup.html" charset="UTF-8" />
   </component>
 </project>

@@ -3,16 +3,14 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-var app =angular.module('starter', ['ionic'])
-
-
+var app =angular.module('starter', ['ionic', 'ngCordova'])
 
 
 
 function ApiUrl(){
 
   this.getUser=function(){
-    return 'http://192.168.1.119:3000/api/user';
+    return 'http://localhost:3000/api/user';
   }
   this.getHistoriaClinica=function(){
     return 'http://localhost:3000/api/historiaClinica';
@@ -56,6 +54,11 @@ app.controller('Redirect', function($scope,$http,myProvider) {
   $scope.ciudadesRedirect=function(){
     console.log('entra');
     window.location='./ciudades.html';
+  }
+
+  $scope.mapsRedirect=function(){
+    console.log('entra');
+    window.location='./map.html';
   }
 
   //Sign In//

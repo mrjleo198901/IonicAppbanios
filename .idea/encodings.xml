@@ -5,6 +5,7 @@
     <file url="file://$PROJECT_DIR$/AppBaniosMobile/www/js/controllers.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AppBaniosMobile/www/templates/login1.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerActivities.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerCity.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerGuides.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerHashtag.js" charset="UTF-8" />
@@ -12,6 +13,7 @@
     <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerSport.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/templateApp.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/Sport.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/activities.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/ciudades.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/guides.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/hashtag.html" charset="UTF-8" />

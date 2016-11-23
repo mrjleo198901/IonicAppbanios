@@ -5,45 +5,34 @@
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
   <title></title>
   <link rel="manifest" href="manifest.json">
-  <!-- un-comment this code to enable service worker
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js')
-        .then(() => console.log('service worker installed'))
-        .catch(err => console.log('Error', err));
-    }
-  </script>-->
   <link href="../lib/ionic/css/ionic.css" rel="stylesheet">
   <link href="../css/style.css" rel="stylesheet">
   <style>
-    .imagebody {
-      background-image: url(../img/fondo1.png);
+    .imagebody{
+      background-image: url(../img/fondo1.png)  ;
       background-size: 120% 100%;
       background-repeat: no-repeat;
     }
   </style>
-  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-  <link href="css/ionic.app.css" rel="stylesheet">
-  -->
-  <!-- ionic/angularjs js -->
   <script src="../lib/ionic/js/ionic.bundle.js"></script>
-  <!-- cordova script (this will be a 404 during development) -->
   <script src="../cordova.js"></script>
-  <!-- your app's js -->
   <script src="../js/app.js"></script>
   <script src="../js/controllerSport.js"></script>
+  <script src="../lib/ngCordova/dist/ng-cordova.js"></script>
+  <script src="http://maps.google.com/maps/api/js?key=AIzaSyAL0nekaSIkOBVcwmULBgI4gBqABRmkltY&sensor=true"></script>
 </head>
-<body ng-app="starter" ng-controller="Redirect">
-<ion-slides pager>
-  <ion-slide style="background-color: green">
-    <h2>Slide 1</h2>
-  </ion-slide>
-  <ion-slide style="background-color: blue">
-    <h2>Slide 2</h2>
-  </ion-slide>
-  <ion-slide style="background-color: red">
-    <h2>Slide 3</h2>
-  </ion-slide>
-</ion-slides>
+<body   ng-app="starter" ng-controller="Redirect">
+<ion-pane>
+  <ion-header-bar class="bar bar-header bar-royal bar-stable">
+    <button class="button  button-stable ion-close-circled" ng-click="indexPage()">
+      Cerrar Sesion
+    </button>
+    <h1 class="title">#baniosTuristico</h1>
+  </ion-header-bar>
+  <ion-content  class="imagebody">
+    <br>
+    <br>
+  </ion-content>
+</ion-pane>
 </body>
 </html>

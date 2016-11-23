@@ -61,6 +61,35 @@ app.controller('Redirect', function($scope,$http,myProvider) {
     window.location='./map.html';
   }
 
+  $scope.guidesRedirect=function(){
+    console.log('entra');
+    window.location='./guides.html';
+  }
+
+  $scope.hashtagRedirect=function(){
+    console.log('entra');
+    window.location='./hashtag.html';
+  }
+
+  $scope.hotelRedirect=function(){
+    console.log('entra');
+    window.location='./hotel.html';
+  }
+
+  $scope.restaurantRedirect=function(){
+    console.log('entra');
+    window.location='./restaurant.html';
+  }
+
+  $scope.sportRedirect=function(){
+    console.log('entra');
+    window.location='./sport.html';
+  }
+
+  $scope.activitiesRedirect=function(){
+    console.log('entra');
+    window.location='./activities.html';
+  }
   //Sign In//
 
   $scope.mensaje = "";

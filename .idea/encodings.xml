@@ -7,8 +7,10 @@
     <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/app.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerActivities.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerCity.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerCiudad.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerGuides.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerHashtag.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerHotel.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerRestaurant.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerSport.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MobileBaniosRelease/www/templateApp.html" charset="UTF-8" />

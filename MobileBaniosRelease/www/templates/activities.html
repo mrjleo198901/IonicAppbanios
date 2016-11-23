@@ -29,9 +29,18 @@
     </button>
     <h1 class="title">#baniosTuristico</h1>
   </ion-header-bar>
-  <ion-content  class="imagebody">
+  <ion-content  class="imagebody" ng-controller="ActivitiesController">
     <br>
     <br>
+    <ion-slide-box on-slide-changed="slideHasChanged($index)">
+      <ion-slide ng-repeat="aux in lista">
+        <div class="box blue">
+          <h1 style="color: white">{{aux.titulo}}</h1><br>
+          <img style="max-width: 100%" src="{{aux.img}}"><br>
+          <h5  style="color: white">{{aux.desc}}</h5></div>
+      </ion-slide>
+
+    </ion-slide-box>
   </ion-content>
 </ion-pane>
 </body>

@@ -10,10 +10,10 @@ var app =angular.module('starter', ['ionic', 'ngCordova'])
 function ApiUrl(){
 
   this.getUser=function(){
-    return 'http://localhost:3000/api/user';
+    return 'http://192.168.1.108:3000/api/user';
   }
   this.getHistoriaClinica=function(){
-    return 'http://localhost:3000/api/historiaClinica';
+    return 'http://192.168.1.108:3000/api/historiaClinica';
   }
 }
 

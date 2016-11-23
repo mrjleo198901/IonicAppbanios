@@ -58,6 +58,7 @@ app.controller('CiudadesController', function($scope,$http,myProvider,$ionicSlid
       img:'../img/ciudad/slide13.jpg',
       desc:'La ciudad posee un sin numero de lugares donde podemos relagarnos y olvidarnos de nuestros problemas.'
     }
+
   ]
 
 

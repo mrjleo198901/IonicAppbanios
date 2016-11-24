@@ -6,38 +6,38 @@ app.controller('RestaurantController', function($scope,$http,myProvider,$ionicSl
     {
       titulo:'Café del Cielo',
       img:'../img/restaurantes/cafeCielo.PNG',
-      desc:'Telefono: 032740360',
-      desc:'Dirección: Vía a Runtun Km 6, Baños'
+      telefono:'Telefono: (03) 2740 360',
+      direccion:'Dirección: Vía a Runtun Km 6, Baños'
     },
     {
       titulo:'Coffee Bar Jota Jota',
       img:'../img/restaurantes/jotaJota.PNG',
-      desc:'Telefono: 0998373240',
-      desc:'Dirección: Luis Martinez y Thomas Halflants'
+      telefono:'Telefono: 0998 373 240',
+      direccion:'Dirección: Luis Martinez y Thomas Halflants'
     },
     {
       titulo:'Le Petit Restaurant',
       img:'../img/restaurantes/lePetit.PNG',
-      desc:'Telefono: 03-2740-936',
-      desc:'Dirección: 16 de Diciembre 240 y Montalvo'
+      telefono:'Telefono: (03) 2740 936',
+      direccion:'Dirección: 16 de Diciembre 240 y Montalvo'
     },
     {
       titulo:'Mercedes Restaurant',
       img:'../img/restaurantes/mercedes.PNG',
-      desc:'Telefono: 032-741-745',
-      desc:'Dirección: Luis Martinez y Sebastian Baño'
+      telefono:'Telefono: (03) 2741 745',
+      direccion:'Dirección: Luis Martinez y Sebastian Baño'
     },
     {
       titulo:'Ricooo Pan Café',
       img:'../img/restaurantes/ricoPan.PNG',
-      desc:'Telefono: 03-2740-387',
-      desc:'Dirección: Ambato y Maldonado'
+      telefono:'Telefono: (03) 2740 387',
+      direccion:'Dirección: Ambato y Maldonado'
     },
     {
       titulo:'Runtun Restaurante',
       img:'../img/restaurantes/runtun.PNG',
-      desc:'Telefono: 032-740-882',
-      desc:'Dirección: Vía a Runtun Km 6'
+      telefono:'Telefono: (03) 2740 882',
+      direccion:'Dirección: Vía a Runtun Km 6'
     }
   ]
 

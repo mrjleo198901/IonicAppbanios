@@ -8,8 +8,8 @@
   <link href="../lib/ionic/css/ionic.css" rel="stylesheet">
   <link href="../css/style.css" rel="stylesheet">
   <style>
-    .imagebody{
-      background-image: url(../img/fondo1.png)  ;
+    .imagebody {
+      background-image: url(../img/fondo1.png);
       background-size: 120% 100%;
       background-repeat: no-repeat;
     }
@@ -21,7 +21,7 @@
   <script src="../lib/ngCordova/dist/ng-cordova.js"></script>
   <script src="http://maps.google.com/maps/api/js?key=AIzaSyAL0nekaSIkOBVcwmULBgI4gBqABRmkltY&sensor=true"></script>
 </head>
-<body   ng-app="starter" ng-controller="Redirect">
+<body ng-app="starter" ng-controller="Redirect">
 <ion-pane>
   <ion-header-bar class="bar bar-header bar-royal bar-stable">
     <button class="button  button-stable ion-close-circled" ng-click="indexPage()">
@@ -29,15 +29,21 @@
     </button>
     <h1 class="title">#baniosTuristico</h1>
   </ion-header-bar>
-  <ion-content  class="imagebody" ng-controller="GuidesController">
+  <ion-content class="imagebody" ng-controller="GuidesController">
     <br>
     <br>
     <ion-slide-box on-slide-changed="slideHasChanged($index)">
       <ion-slide ng-repeat="aux in lista">
-        <div class="box blue">
-          <h1 style="color: white">{{aux.titulo}}</h1><br>
-          <img style="max-width: 100%" src="{{aux.img}}"><br>
-          <h5  style="color: white">{{aux.desc}}</h5></div>
+        <div class="box blue" style="color: white">
+          <center><h3 style="color: white">{{aux.titulo}}</h3><br>
+            <img style="max-width: 100%" src="{{aux.img}}"><br>
+            <div style="text-align:justify">
+              <p >{{aux.telefono}}</p>
+              <p >{{aux.mail}}</p>
+              <p >{{aux.desc}}</p>
+            </div>
+          </center>
+        </div>
       </ion-slide>
 
     </ion-slide-box>

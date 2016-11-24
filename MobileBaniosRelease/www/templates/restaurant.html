@@ -34,12 +34,16 @@
     <br>
     <ion-slide-box on-slide-changed="slideHasChanged($index)">
       <ion-slide ng-repeat="aux in lista">
-        <div class="box blue">
-          <h1 style="color: white">{{aux.titulo}}</h1><br>
-          <img style="max-width: 100%" src="{{aux.img}}"><br>
-          <h5  style="color: white">{{aux.desc}}</h5></div>
+        <div class="box blue" style="color: white">
+          <center><h3 style="color: white">{{aux.titulo}}</h3><br>
+            <img style="max-width: 100%" src="{{aux.img}}"><br>
+            <div style="text-align:justify">
+              <p>{{aux.telefono}}</p>
+              <p>{{aux.direccion}}</p>
+            </div>
+          </center>
+        </div>
       </ion-slide>
-
     </ion-slide-box>
   </ion-content>
 </ion-pane>

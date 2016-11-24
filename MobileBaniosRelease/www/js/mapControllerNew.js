@@ -2,28 +2,8 @@
  * Created by Leo on 23/11/2016.
  */
 
-
-/*function checkConnection() {
-  var networkState = navigator.connection.type;
-
-  var states = {};
-  states[Connection.UNKNOWN]  = 'Unknown connection';
-  states[Connection.ETHERNET] = 'Ethernet connection';
-  states[Connection.WIFI]     = 'WiFi connection';
-  states[Connection.CELL_2G]  = 'Cell 2G connection';
-  states[Connection.CELL_3G]  = 'Cell 3G connection';
-  states[Connection.CELL_4G]  = 'Cell 4G connection';
-  states[Connection.CELL]     = 'Cell generic connection';
-  states[Connection.NONE]     = 'No network connection';
-
-  alert('Connection type: ' + states[networkState]);
-}
-
-checkConnection();*/
-
-
-
-app.controller('MapControllerNew', function ($scope, $ionicLoading, $compile, $http, myProvider, $state, $cordovaGeolocation) {
+app.controller('MapControllerNew', function ($scope, $ionicLoading, $compile, $http, myProvider, $state,$ionicPopup,
+                                             $cordovaGeolocation) {
   var options = {timeout: 10000, enableHighAccuracy: true};
   var lat = 0;
   var long = 0;
@@ -34,43 +14,26 @@ app.controller('MapControllerNew', function ($scope, $ionicLoading, $compile, $h
 
     lat = position.coords.latitude;
     long = position.coords.longitude;
-    initialize(lat, long);
-    /*var mapOptions = {
-     center: latLng,
-     zoom: 15,
-     mapTypeId: google.maps.MapTypeId.ROADMAP
-     };
+    if (lat == 0 || long == 0) {
+      alert("error")
+    } else {
+      initialize(lat, long);
 
-     //$scope.map = new google.maps.Map(document.getElementById("map"), mapOptions);
-
-     google.maps.event.addListenerOnce($scope.map, 'idle', function () {
-
-     var marker = new google.maps.Marker({
-     map: $scope.map,
-     animation: google.maps.Animation.DROP,
-     position: latLng
-     });
-
-     var infoWindow = new google.maps.InfoWindow({
-     content: "<center>#baniosTuristicoApp</center>" + "Estas aqui!" +
-     "<br/>Latitud:" + position.coords.latitude + "<br/>Longitud:" + position.coords.longitude
-     });
-
-     google.maps.event.addListener(marker, 'click', function () {
-     infoWindow.open($scope.map, marker);
-     });
-
-     });*/
+    }
 
 
   }, function (error) {
     console.log("No se puede obtener la ubicacion actual");
+    $ionicPopup.confirm({
+      title: 'No hay conexion a Internet!',
+      content: '<center>Disculpa, no se puede detectar la conexion a Internet. Porfavor reconectate e intentalo de nuevo!.</center>'
+    })
+
   });
 
 
   function initialize(lat, long) {
-    console.log(lat);
-    console.log(long);
+
     var site = new google.maps.LatLng(lat, long);
     //var site = new google.maps.LatLng(-1.6576195999999999, -78.6511877);
     var banios = new google.maps.LatLng(-1.3978554675299164, -78.42331901192665);
@@ -83,7 +46,6 @@ app.controller('MapControllerNew', function ($scope, $ionicLoading, $compile, $h
     };
     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-    //Marker + infowindow + angularjs compiled ng-click
     var contentString = "<div><a ng-click='clickTest()'>Click me!</a></div>";
     var compiled = $compile(contentString)($scope);
 

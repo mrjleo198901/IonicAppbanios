@@ -60,6 +60,27 @@ app.controller('HotelController', function($scope,$http,myProvider,$ionicSlideBo
     }
   ]
 
+  $scope.ratingsObject = {
+    iconOn : 'ion-ios-star',
+    iconOff : 'ion-ios-star-outline',
+    iconOffColor: 'rgb(200, 200, 100)',
+    //iconOffColor:  'rgb(200, 100, 100)',
+    iconOnColor:  'rgb(255, 255, 255)',
+    rating:  2,
+    minRating:1,
+    callback: function(rating,index) {
+      $scope.ratingsCallback(rating,index);
+    }
+  };
+
+  $scope.ratingsCallback = function(rating, index) {
+    console.log('Selected rating is : ', rating, ' and index is ', index);
+  };
+
+  /*$scope.ratingsCallback = function(rating) {
+    console.log('Selected rating is : ', rating);
+  };*/
+
   $scope.next = function() {
     $ionicSlideBoxDelegate.next();
   };
@@ -70,4 +91,9 @@ app.controller('HotelController', function($scope,$http,myProvider,$ionicSlideBo
   $scope.slideChanged = function(index) {
     $scope.slideIndex = index;
   };
+
+
+
+
+
 });

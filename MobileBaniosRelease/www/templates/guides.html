@@ -24,11 +24,14 @@
 </head>
 <body ng-app="starter" ng-controller="Redirect">
 <ion-pane>
-  <ion-header-bar class="bar bar-header bar-royal bar-stable">
-    <button class="button  button-stable ion-close-circled" ng-click="indexPage()">
-      Cerrar Sesion
+  <ion-header-bar class="bar bar-header bar-dark bar-stable">
+    <button class="button  button-stable ion-android-home" ng-click="menuAdmRedirect()">
+      Menu
     </button>
-    <h1 class="title">#baniosTuristico</h1>
+    <h1 class="title" style="text-align: center">#baniosTuristico</h1>
+    <button class="button  button-stable ion-log-out" ng-click="">
+      Salir
+    </button>
   </ion-header-bar>
   <ion-content class="imagebody" ng-controller="GuidesController">
     <br>

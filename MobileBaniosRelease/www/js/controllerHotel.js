@@ -1,7 +1,7 @@
 /**
  * Created by Juanpa on 23/11/2016.
  */
-app.controller('HotelController', function ($scope, $http, myProvider, $ionicSlideBoxDelegate) {
+app.controller('HotelController', function ($scope, $http, myProvider, $ionicSlideBoxDelegate,$ionicPopup) {
   $scope.lista = [
     {
       titulo: 'ALIZAMAY HOTEL',
@@ -83,7 +83,7 @@ app.controller('HotelController', function ($scope, $http, myProvider, $ionicSli
 
   $scope.labels = [
     "Current",
-    "Avarage"
+    "Average"
   ];
 
   $scope.ratingsCallback = function (rating, index) {
@@ -104,6 +104,55 @@ app.controller('HotelController', function ($scope, $http, myProvider, $ionicSli
   $scope.slideChanged = function (index) {
     $scope.slideIndex = index;
   };
+
+
+  ///////////getCurAver//////////
+
+  $scope.getAverage = function () {
+    var url = myProvider.getEstablecimiento();
+
+    console.log(url);
+
+    $http({
+      method: 'GET',
+      url: url,
+      headers: {
+        'Content-Type': 'application/json'
+      }
+
+    }).then(function successCallback(response) {
+      $scope.usuario1 = angular.fromJson(response.data[0]);
+
+      if (response.data.length > 0) {
+        console.log($scope.usuario1);
+
+        if ($scope.usuario1.mail == $scope.usuarioLogin.mail && $scope.usuario1.pass == $scope.usuarioLogin.pass) {
+
+          window.localStorage.setItem("usuario", JSON.stringify($scope.usuario1));
+          //window.location = '/appBanios/client/hola.html';
+
+        } else {
+
+          $scope.mensaje = "Revise su correo y password";
+        }
+
+      } else {
+
+        $scope.mensaje = "Revise su usuario y password";
+        alert('Revise su usuario y password');
+      }
+
+      console.log(response);
+
+    }, function errorCallback(response) {
+      // called asynchronously if an error occurs
+      // or server returns response with an error status.
+      Console.log(response);
+      $scope.mesaje = response.mensaje;
+
+    });
+  };
+
 
 
 });

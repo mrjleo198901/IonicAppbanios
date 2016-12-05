@@ -10,7 +10,8 @@ var estSchema = new mongoose.Schema({
     name : String,
     average: Number,
     acum: Number,
-    ratingNumber: Number
+    ratingNumber: Number,
+    indice: Number
 
 });
 

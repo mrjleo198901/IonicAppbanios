@@ -101,11 +101,20 @@
           </center>
         </div>
 
-
-        <div ng-repeat="i in [1,2]">
+        <!--<div ng-repeat="i in [1,2]">
           <label style="color: white;">{{labels[i]}}</label>
           <ionic-ratings ratingsobj='ratingsObject' index='$index'></ionic-ratings>
+        </div>-->
+
+        <div>
+          <label style="color: white;">Calificacion Actual</label>
+          <ionic-ratings ratingsobj='ratingsObjectCurrent' index='$index'></ionic-ratings>
         </div>
+        <div>
+          <label style="color: white;">Promedio</label>
+          <ionic-ratings ratingsobj='ratingsObjectAvg' index='$index'></ionic-ratings>
+        </div>
+
 
       </ion-slide>
 

@@ -1,11 +1,16 @@
 /**
  * Created by Juanpa on 23/11/2016.
  */
-var sample = [{}];
-var avg = 1;
-var ind = 0;
+
 
 app.controller('HotelController', function ($scope, $http, myProvider, $ionicSlideBoxDelegate, $ionicPopup) {
+
+  var sample = [{}];
+  var avg = 1;
+  var ind = 0;
+  $scope.ratingsObjectCurrent = '';
+  $scope.ratingsObjectAvg = '';
+
 
   $scope.lista = [
     {
@@ -74,54 +79,44 @@ app.controller('HotelController', function ($scope, $http, myProvider, $ionicSli
     }
   ]
 
-  ////////////////////////Current grade/////////////////////
-  $scope.ratingsObjectCurrent = {
-    iconOn: 'ion-ios-star',
-    iconOff: 'ion-ios-star-outline',
-    iconOffColor: 'rgb(200, 200, 100)',
-    //iconOffColor:  'rgb(200, 100, 100)',
-    iconOnColor: 'rgb(255, 255, 255)',
-    rating: 2,
-    minRating: 1,
-    callback: function (rating, index) {
-      $scope.ratingsCallback(rating, index);
-    }
-  };
-
-  ////////////////////////Average/////////////////////
-
-  $scope.ratingsObjectAvg = {
-    iconOn: 'ion-ios-star',
-    iconOff: 'ion-ios-star-outline',
-    iconOffColor: 'rgb(200, 200, 100)',
-    //iconOffColor:  'rgb(200, 100, 100)',
-    iconOnColor: 'rgb(255, 255, 255)',
-    rating: avg,
-    minRating: 1,
-    readOnly: true,
-    callback: function (rating, index) {
-      $scope.ratingsCallback(rating, index);
-    }
-  };
-
-
   $scope.slideHasChanged = function ($index) {
-  //////////////
-
-  //////////////
 
     ind = $index;
     avg = getAvg(ind);
-    console.log(avg);
+
+    ////////////////////////Current grade/////////////////////
+    $scope.ratingsObjectCurrent = {
+      iconOn: 'ion-ios-star',
+      iconOff: 'ion-ios-star-outline',
+      iconOffColor: 'rgb(200, 200, 100)',
+      iconOnColor: 'rgb(255, 255, 255)',
+      rating: 2,
+      minRating: 1,
+      callback: function (rating, index) {
+        $scope.ratingsCallback1(rating, index);
+      }
+    };
+
+    ////////////////////////Average/////////////////////
+    console.log('ahi ta ' + $scope.lista.length)
+    $scope.ratingsObjectAvg = {
+      iconOn: 'ion-ios-star',
+      iconOff: 'ion-ios-star-outline',
+      iconOffColor: 'rgb(200, 200, 100)',
+      //iconOffColor:  'rgb(200, 100, 100)',
+      iconOnColor: 'rgb(255, 255, 255)',
+      rating: avg,
+      minRating: 1,
+      readOnly: true,
+      callback: function (rating, index) {
+        $scope.ratingsCallback2(rating, index);
+      }
+    };
+
     if ($index === 0) {
       // first box
+      //avg = getAvg(ind);
     }
-  };
-
-
-  $scope.ratingsCallback = function (rating, index) {
-    console.log('Rating: ', rating, ' Index: ', index, ' Nro. Hotel: ', ind);
-
   };
 
   $scope.next = function () {
@@ -151,24 +146,32 @@ app.controller('HotelController', function ($scope, $http, myProvider, $ionicSli
 
       for (var i = 0; i < response.data.length; i++) {
         sample[i] = angular.fromJson(response.data[i]);
-        console.log(sample[i].name);
       }
 
-      avg=getAvg(ind);
-      console.log("arrancando: "+avg);
+      avg = getAvg(ind);
+      $scope.ratingsObjectAvg = {
+        iconOn: 'ion-ios-star',
+        iconOff: 'ion-ios-star-outline',
+        iconOffColor: 'rgb(200, 200, 100)',
+        iconOnColor: 'rgb(255, 255, 255)',
+        rating: avg,
+        minRating: 1,
+        readOnly: true,
+        callback: function (rating, index) {
+          $scope.ratingsCallback2(rating, index);
+        }
+      };
     }, function errorCallback(response) {
       $scope.mesaje = response.mensaje;
 
     });
 
   };
-  //console.log(getAvg(0));
-  //console.log(ind)
+
   $scope.getEstablecimientos();
 
   function getAvg(ind) {
     var n = sample.length;
-    //console.log("sample lenght:" + n)
     var avg;
     for (var i = 0; i < n; i++) {
       if (sample[i].indice == ind) {
@@ -178,6 +181,42 @@ app.controller('HotelController', function ($scope, $http, myProvider, $ionicSli
     }
     return avg;
   }
+
+  ////////////////////////Current grade/////////////////////
+  $scope.ratingsObjectCurrent = {
+    iconOn: 'ion-ios-star',
+    iconOff: 'ion-ios-star-outline',
+    iconOffColor: 'rgb(200, 200, 100)',
+    iconOnColor: 'rgb(255, 255, 255)',
+    rating: 2,
+    minRating: 1,
+    callback: function (rating, index) {
+      $scope.ratingsCallback1(rating, index);
+    }
+  };
+
+  ////////////////////////Average/////////////////////
+  $scope.ratingsObjectAvg = {
+    iconOn: 'ion-ios-star',
+    iconOff: 'ion-ios-star-outline',
+    iconOffColor: 'rgb(200, 200, 100)',
+    iconOnColor: 'rgb(255, 255, 255)',
+    rating: avg,
+    minRating: 1,
+    readOnly: true,
+    callback: function (rating, index) {
+      $scope.ratingsCallback2(rating, index);
+    }
+  };
+
+  $scope.ratingsCallback1 = function (rating, index) {
+    console.log('Rating: ', rating, ' Index: ', index, ' Nro. Hotel: ', ind);
+
+  };
+  $scope.ratingsCallback2 = function (rating, index) {
+    console.log('Rating: ', rating + 'avg: ' + avg + 'index:' + index);
+
+  };
 
 });
 

@@ -3,14 +3,14 @@
  */
 
 
-app.controller('HotelController', function ($scope, $http, myProvider, $ionicSlideBoxDelegate, $ionicPopup) {
+app.controller('HotelController', function ($scope, $http, myProvider, $ionicSlideBoxDelegate, $ionicPopup, $ionicLoading, $compile) {
 
   var sample = [{}];
   var avg = 1;
   var ind = 0;
   $scope.ratingsObjectCurrent = '';
   $scope.ratingsObjectAvg = '';
-
+  var readOnlyOp = false;
 
   $scope.lista = [
     {
@@ -83,7 +83,6 @@ app.controller('HotelController', function ($scope, $http, myProvider, $ionicSli
 
     ind = $index;
     avg = getAvg(ind);
-
     ////////////////////////Current grade/////////////////////
     $scope.ratingsObjectCurrent = {
       iconOn: 'ion-ios-star',
@@ -92,19 +91,21 @@ app.controller('HotelController', function ($scope, $http, myProvider, $ionicSli
       iconOnColor: 'rgb(255, 255, 255)',
       rating: 2,
       minRating: 1,
+      readOnly: true,
       callback: function (rating, index) {
         $scope.ratingsCallback1(rating, index);
       }
     };
 
     ////////////////////////Average/////////////////////
-    console.log('ahi ta ' + $scope.lista.length)
+    //console.log('ahi ta ' + $scope.lista.length)
     $scope.ratingsObjectAvg = {
       iconOn: 'ion-ios-star',
       iconOff: 'ion-ios-star-outline',
-      iconOffColor: 'rgb(200, 200, 100)',
-      //iconOffColor:  'rgb(200, 100, 100)',
-      iconOnColor: 'rgb(255, 255, 255)',
+      //iconOffColor: 'rgb(200, 200, 100)',
+      //iconOnColor: 'rgb(255, 255, 255)',
+      iconOffColor: 'rgb(10, 20, 98)',
+      iconOnColor: 'rgb(98, 180, 5)',
       rating: avg,
       minRating: 1,
       readOnly: true,
@@ -183,15 +184,37 @@ app.controller('HotelController', function ($scope, $http, myProvider, $ionicSli
   }
 
   ////////////////////////Current grade/////////////////////
+  var a;
   $scope.ratingsObjectCurrent = {
     iconOn: 'ion-ios-star',
     iconOff: 'ion-ios-star-outline',
-    iconOffColor: 'rgb(200, 200, 100)',
-    iconOnColor: 'rgb(255, 255, 255)',
+    //iconOffColor: 'rgb(200, 200, 100)',
+    //iconOnColor: 'rgb(255, 255, 255)',
+    iconOffColor: 'rgb(10, 20, 98)',
+    iconOnColor: 'rgb(98, 180, 5)',
     rating: 2,
     minRating: 1,
+    readOnly: false,
     callback: function (rating, index) {
+      console.log("1st")
       $scope.ratingsCallback1(rating, index);
+      a = rating;
+      $ionicPopup.alert({
+        title: 'baniosTuristico!',
+        content: '<center>Has votado por el establecimiento!</center>',
+        buttons: [{
+          text: 'OK',
+          type: 'button-positive',
+          onTap: function (e) {
+            /////////////////////*****/////////////////////////
+            $scope.remakeStar();
+            /////////////////////*****/////////////////////////
+
+            //window.location = 'singin.html';
+            //return scope.data.response;
+          }
+        }]
+      })
     }
   };
 
@@ -211,12 +234,33 @@ app.controller('HotelController', function ($scope, $http, myProvider, $ionicSli
 
   $scope.ratingsCallback1 = function (rating, index) {
     console.log('Rating: ', rating, ' Index: ', index, ' Nro. Hotel: ', ind);
-
   };
   $scope.ratingsCallback2 = function (rating, index) {
     console.log('Rating: ', rating + 'avg: ' + avg + 'index:' + index);
-
   };
+
+
+  $scope.remakeStar = function () {
+    console.log("entro function remake")
+    $scope.ratingsObjectCurrent = {
+      iconOn: 'ion-ios-star',
+      iconOff: 'ion-ios-star-outline',
+      iconOffColor: 'rgb(200, 200, 100)',
+      iconOnColor: 'rgb(255, 255, 255)',
+      //iconOffColor: 'rgb(10, 20, 98)',
+      //iconOnColor: 'rgb(98, 180, 5)',
+      rating: 2,
+      minRating: 1,
+      readOnly: true,
+      callback: function (rating, index) {
+        console.log("2nd")
+        $scope.ratingsCallback1(rating, index);
+      }
+
+    };
+    console.log($scope.ratingsObjectCurrent);
+
+  }
 
 });
 

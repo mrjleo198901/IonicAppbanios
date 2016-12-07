@@ -94,9 +94,8 @@
             <img style="max-width: 100%" src="{{aux.img}}"><br>
 
             <div style="text-align:justify">
-              <p>{{aux.telefono}}</p>
-
-              <p>{{aux.direccion}}</p>
+              <p style="text-align: center">{{aux.telefono}}</p>
+              <p style="text-align: center">{{aux.direccion}}</p>
             </div>
           </center>
         </div>
@@ -108,7 +107,7 @@
 
         <div>
           <label style="color: white;">Calificacion Actual</label>
-          <ionic-ratings ratingsobj='ratingsObjectCurrent' index='$index'></ionic-ratings>
+          <ionic-ratings ng-show="!ratingsObjectCurrent.readOnly" ratingsobj='ratingsObjectCurrent' index='$index'></ionic-ratings>
         </div>
         <div>
           <label style="color: white;">Promedio</label>

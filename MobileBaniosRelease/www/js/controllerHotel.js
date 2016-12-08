@@ -10,7 +10,13 @@ app.controller('HotelController', function ($scope, $http, myProvider, $ionicSli
   var ind = 0;
   $scope.ratingsObjectCurrent = '';
   $scope.ratingsObjectAvg = '';
-  var readOnlyOp = false;
+  var alreadyVoted = false;
+  var a;
+
+  // set the rate and max variables
+  $scope.rating = {};
+  $scope.rating.rate = 3;
+  $scope.rating.max = 5;
 
   $scope.lista = [
     {
@@ -83,6 +89,9 @@ app.controller('HotelController', function ($scope, $http, myProvider, $ionicSli
 
     ind = $index;
     avg = getAvg(ind);
+
+
+
     ////////////////////////Current grade/////////////////////
     $scope.ratingsObjectCurrent = {
       iconOn: 'ion-ios-star',
@@ -93,9 +102,32 @@ app.controller('HotelController', function ($scope, $http, myProvider, $ionicSli
       minRating: 1,
       readOnly: true,
       callback: function (rating, index) {
+        //alreadyVoted = true;
+        var container = document.getElementById("currentDiv");
+        var content = container.innerHTML;
+        container.innerHTML = content;
+
+
+
+        console.log("slide")
         $scope.ratingsCallback1(rating, index);
+        a = rating;
+        $ionicPopup.alert({
+          title: 'baniosTuristico!',
+          content: '<center>Has votado por el establecimiento!</center>',
+          buttons: [{
+            text: 'OK',
+            type: 'button-positive',
+            onTap: function (e) {
+              //$scope.remakeStar();
+
+
+            }
+          }]
+        })
       }
     };
+
 
     ////////////////////////Average/////////////////////
     //console.log('ahi ta ' + $scope.lista.length)
@@ -184,40 +216,37 @@ app.controller('HotelController', function ($scope, $http, myProvider, $ionicSli
   }
 
   ////////////////////////Current grade/////////////////////
-  var a;
-  $scope.ratingsObjectCurrent = {
-    iconOn: 'ion-ios-star',
-    iconOff: 'ion-ios-star-outline',
-    //iconOffColor: 'rgb(200, 200, 100)',
-    //iconOnColor: 'rgb(255, 255, 255)',
-    iconOffColor: 'rgb(10, 20, 98)',
-    iconOnColor: 'rgb(98, 180, 5)',
-    rating: 2,
-    minRating: 1,
-    readOnly: false,
-    callback: function (rating, index) {
-      console.log("1st")
-      $scope.ratingsCallback1(rating, index);
-      a = rating;
-      $ionicPopup.alert({
-        title: 'baniosTuristico!',
-        content: '<center>Has votado por el establecimiento!</center>',
-        buttons: [{
-          text: 'OK',
-          type: 'button-positive',
-          onTap: function (e) {
-            /////////////////////*****/////////////////////////
-            $scope.remakeStar();
-            /////////////////////*****/////////////////////////
-
-            //window.location = 'singin.html';
-            //return scope.data.response;
-          }
-        }]
-      })
-    }
-  };
-
+  /*
+   $scope.ratingsObjectCurrent = {
+   iconOn: 'ion-ios-star',
+   iconOff: 'ion-ios-star-outline',
+   iconOffColor: 'rgb(200, 200, 100)',
+   iconOnColor: 'rgb(255, 255, 255)',
+   //iconOffColor:'rgb(255,255,255)',
+   //iconOnColor:'rgb(233,53,53)',
+   //iconOffColor: 'rgb(10, 20, 98)',
+   //iconOnColor: 'rgb(98, 180, 5)',
+   rating: 2,
+   minRating: 1,
+   readOnly: false,
+   callback: function (rating, index) {
+   console.log("1st")
+   $scope.ratingsCallback1(rating, index);
+   a = rating;
+   $ionicPopup.alert({
+   title: 'baniosTuristico!',
+   content: '<center>Has votado por el establecimiento!</center>',
+   buttons: [{
+   text: 'OK',
+   type: 'button-positive',
+   onTap: function (e) {
+   $scope.remakeStar();
+   }
+   }]
+   })
+   }
+   };
+   */
   ////////////////////////Average/////////////////////
   $scope.ratingsObjectAvg = {
     iconOn: 'ion-ios-star',
@@ -241,25 +270,26 @@ app.controller('HotelController', function ($scope, $http, myProvider, $ionicSli
 
 
   $scope.remakeStar = function () {
-    console.log("entro function remake")
-    $scope.ratingsObjectCurrent = {
-      iconOn: 'ion-ios-star',
-      iconOff: 'ion-ios-star-outline',
-      iconOffColor: 'rgb(200, 200, 100)',
-      iconOnColor: 'rgb(255, 255, 255)',
-      //iconOffColor: 'rgb(10, 20, 98)',
-      //iconOnColor: 'rgb(98, 180, 5)',
-      rating: 2,
-      minRating: 1,
-      readOnly: true,
-      callback: function (rating, index) {
-        console.log("2nd")
-        $scope.ratingsCallback1(rating, index);
-      }
 
-    };
-    console.log($scope.ratingsObjectCurrent);
 
+    var container = document.getElementById("currentDiv");
+    var content = container.innerHTML;
+    container.innerHTML = content;
+
+    console.log("star")
+    /*$scope.ratingsObjectCurrent = {
+     iconOn: 'ion-ios-star',
+     iconOff: 'ion-ios-star-outline',
+     iconOffColor: 'rgb(200, 200, 100)',
+     iconOnColor: 'rgb(255, 255, 255)',
+     rating: a,
+     minRating: 1,
+     readOnly: true,
+     callback: function (rating, index) {
+     console.log("remake")
+     $scope.ratingsCallback1(rating, index);
+     }
+     };*/
   }
 
 });

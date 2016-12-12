@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="977d3811-68b7-41d6-acd7-1d01e0f84125" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/lib/ionic-rating/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/lib/ionic-rating/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/lib/ionic-rating/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/lib/ionic-rating/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/lib/ionic-rating/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/lib/ionic-rating/ionic-rating.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/lib/ionic-rating/ionic-rating.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/lib/ionic-rating/ionic-rating.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/lib/ionic-rating/ionic-rating.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/lib/ionic-rating/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerSignUp.js" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerSignUp.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/debug.log" afterPath="$PROJECT_DIR$/MobileBaniosRelease/debug.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/templates/singup.html" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/templates/singup.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IonicAppbanios.iws" />
@@ -34,27 +26,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="hotel.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/hotel.html">
+      <file leaf-file-name="singup.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/singup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5">
-              <caret line="88" column="2" selection-start-line="88" selection-start-column="2" selection-end-line="88" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.6748634">
+              <caret line="50" column="2" selection-start-line="50" selection-start-column="2" selection-end-line="50" selection-end-column="2" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#center#0;n#div#0;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#1;n#div#0;n#center#0;n#div#0;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#1;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#2;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#ion-header-bar#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hashtag.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/hashtag.html">
+      <file leaf-file-name="singin.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/singin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.846154">
-              <caret line="23" column="65" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
+            <state vertical-scroll-proportion="-16.576923">
+              <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -64,17 +52,17 @@
         <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="46" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="guides.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/guides.html">
+      <file leaf-file-name="controllerSignUp.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerSignUp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.3005464">
-              <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -115,12 +103,10 @@
         <option value="$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerCiudad.js" />
         <option value="$PROJECT_DIR$/MobileBaniosRelease/www/templates/guides.html" />
         <option value="$PROJECT_DIR$/services/models/establecimientoModel.js" />
-        <option value="$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerSignUp.js" />
         <option value="$PROJECT_DIR$/MobileBaniosRelease/www/lib/ionic-ratings/dist/ionic-ratings.min.js" />
         <option value="$PROJECT_DIR$/MobileBaniosRelease/www/lib/ionic-rating/ionic-rating.min.js" />
         <option value="$PROJECT_DIR$/MobileBaniosRelease/www/index.html" />
         <option value="$PROJECT_DIR$/MobileBaniosRelease/www/templates/singin.html" />
-        <option value="$PROJECT_DIR$/MobileBaniosRelease/www/templates/singup.html" />
         <option value="$PROJECT_DIR$/MobileBaniosRelease/www/templates/menuAdm.html" />
         <option value="$PROJECT_DIR$/MobileBaniosRelease/www/templates/hotel.html" />
         <option value="$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerHotel.js" />
@@ -131,6 +117,8 @@
         <option value="$PROJECT_DIR$/MobileBaniosRelease/www/templates/activities.html" />
         <option value="$PROJECT_DIR$/MobileBaniosRelease/www/templates/map.html" />
         <option value="$PROJECT_DIR$/MobileBaniosRelease/www/templates/restaurant.html" />
+        <option value="$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerSignUp.js" />
+        <option value="$PROJECT_DIR$/MobileBaniosRelease/www/templates/singup.html" />
       </list>
     </option>
   </component>
@@ -203,11 +191,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="MobileBaniosRelease" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -222,6 +206,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="MobileBaniosRelease" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IonicAppbanios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IonicAppbanios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobileBaniosRelease" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IonicAppbanios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IonicAppbanios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobileBaniosRelease" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -480,14 +512,20 @@
       <option name="project" value="LOCAL" />
       <updated>1481556123818</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="server directory&#10;">
+      <created>1481557621360</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1481557621360</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1378" height="744" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24477611" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24477611" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32622603" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5052239" order="7" side_tool="true" content_ui="tabs" />
@@ -554,13 +592,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/map.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -573,12 +604,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="95" selection-start-line="34" selection-start-column="95" selection-end-line="34" selection-end-column="95" />
           <folding>
-            <element signature="n#style#0;n#h1#0;n#ion-header-bar#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ion-label#0;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#1;n#ion-label#0;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ion-label#1;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#ion-header-bar#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ion-label#0;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#1;n#ion-label#0;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ion-label#1;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -609,12 +640,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
           <folding>
-            <element signature="n#style#0;n#h1#0;n#ion-header-bar#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ion-label#0;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#1;n#ion-label#0;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ion-label#1;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#ion-header-bar#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ion-label#0;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#1;n#ion-label#0;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ion-label#1;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -666,12 +697,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#h1#0;n#ion-header-bar#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ion-label#0;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#1;n#ion-label#0;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ion-label#1;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#ion-header-bar#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ion-label#0;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#1;n#ion-label#0;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ion-label#1;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -767,13 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerSignUp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/lib/ionic-rating/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.3534245">
@@ -817,12 +841,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="67" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
           <folding>
-            <element signature="n#style#0;n#h1#0;n#ion-header-bar#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ion-label#0;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#1;n#ion-label#0;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ion-label#1;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#ion-header-bar#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ion-label#0;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#1;n#ion-label#0;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ion-label#1;n#div#0;n#div#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -855,44 +879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/hotel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5">
-          <caret line="88" column="2" selection-start-line="88" selection-start-column="2" selection-end-line="88" selection-end-column="65" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#center#0;n#div#0;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#div#0;n#center#0;n#div#0;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#1;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#2;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/singup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7185793">
-          <caret line="37" column="65" selection-start-line="37" selection-start-column="65" selection-end-line="37" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/singin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44808742">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/restaurant.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4180328">
@@ -917,14 +903,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/activities.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39617488">
-          <caret line="23" column="65" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/ciudades.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43715847">
@@ -933,35 +911,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/services/models/userModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/hashtag.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.846154">
+        <state vertical-scroll-proportion="0.69945353">
           <caret line="23" column="65" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/models/establecimientoModel.js">
+    <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/hotel.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47959185">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/models/userModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6505102">
-          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding />
+        <state vertical-scroll-proportion="0.60382515">
+          <caret line="88" column="2" selection-start-line="88" selection-start-column="2" selection-end-line="88" selection-end-column="65" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#center#0;n#div#0;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#0;n#center#0;n#div#0;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#1;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#2;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -970,6 +954,64 @@
         <state vertical-scroll-proportion="1.3005464">
           <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/activities.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.510929">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/models/establecimientoModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3494898">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/singin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.576923">
+          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="46" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerSignUp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/singup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6748634">
+          <caret line="50" column="2" selection-start-line="50" selection-start-column="2" selection-end-line="50" selection-end-column="2" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#ion-header-bar#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

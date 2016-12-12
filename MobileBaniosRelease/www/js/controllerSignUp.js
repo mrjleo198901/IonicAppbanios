@@ -5,6 +5,12 @@
 app.controller('ControllerSignUp', function ($scope, $ionicLoading, $compile, $http, myProvider, $state, $ionicPopup) {
 
   //Sign Up//
+
+  $scope.indexPage = function () {
+    console.log('entra');
+    window.location = '../index.html';
+  }
+
   $scope.usuario = {
     nombre: '',
     apellido: '',

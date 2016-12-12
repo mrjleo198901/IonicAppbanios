@@ -91,7 +91,6 @@ app.controller('HotelController', function ($scope, $http, myProvider, $ionicSli
     avg = getAvg(ind);
 
 
-
     ////////////////////////Current grade/////////////////////
     $scope.ratingsObjectCurrent = {
       iconOn: 'ion-ios-star',
@@ -106,7 +105,6 @@ app.controller('HotelController', function ($scope, $http, myProvider, $ionicSli
         var container = document.getElementById("currentDiv");
         var content = container.innerHTML;
         container.innerHTML = content;
-
 
 
         console.log("slide")
@@ -216,37 +214,37 @@ app.controller('HotelController', function ($scope, $http, myProvider, $ionicSli
   }
 
   ////////////////////////Current grade/////////////////////
-  /*
-   $scope.ratingsObjectCurrent = {
-   iconOn: 'ion-ios-star',
-   iconOff: 'ion-ios-star-outline',
-   iconOffColor: 'rgb(200, 200, 100)',
-   iconOnColor: 'rgb(255, 255, 255)',
-   //iconOffColor:'rgb(255,255,255)',
-   //iconOnColor:'rgb(233,53,53)',
-   //iconOffColor: 'rgb(10, 20, 98)',
-   //iconOnColor: 'rgb(98, 180, 5)',
-   rating: 2,
-   minRating: 1,
-   readOnly: false,
-   callback: function (rating, index) {
-   console.log("1st")
-   $scope.ratingsCallback1(rating, index);
-   a = rating;
-   $ionicPopup.alert({
-   title: 'baniosTuristico!',
-   content: '<center>Has votado por el establecimiento!</center>',
-   buttons: [{
-   text: 'OK',
-   type: 'button-positive',
-   onTap: function (e) {
-   $scope.remakeStar();
-   }
-   }]
-   })
-   }
-   };
-   */
+
+  $scope.ratingsObjectCurrent = {
+    iconOn: 'ion-ios-star',
+    iconOff: 'ion-ios-star-outline',
+    iconOffColor: 'rgb(200, 200, 100)',
+    iconOnColor: 'rgb(255, 255, 255)',
+    //iconOffColor:'rgb(255,255,255)',
+    //iconOnColor:'rgb(233,53,53)',
+    //iconOffColor: 'rgb(10, 20, 98)',
+    //iconOnColor: 'rgb(98, 180, 5)',
+    rating: 2,
+    minRating: 1,
+    readOnly: false,
+    callback: function (rating, index) {
+      console.log("1st")
+      $scope.ratingsCallback1(rating, index);
+      a = rating;
+      $ionicPopup.alert({
+        title: 'baniosTuristico!',
+        content: '<center>Has votado por el establecimiento!</center>',
+        buttons: [{
+          text: 'OK',
+          type: 'button-positive',
+          onTap: function (e) {
+            $scope.remakeStar();
+          }
+        }]
+      })
+    }
+  };
+
   ////////////////////////Average/////////////////////
   $scope.ratingsObjectAvg = {
     iconOn: 'ion-ios-star',

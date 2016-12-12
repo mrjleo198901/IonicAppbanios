@@ -122,12 +122,12 @@
         <div id="currentDiv">
           <label style="color: white;">Calificacion Actual</label>
           <!--<rating ng-model="rating.rate" max="rating.max"></rating>-->
-          <rating ng-model="data.rating" max="data.max"></rating>
+          <rating ng-model="data.rating" max="data.max" readonly="readOnlyCur"></rating>
           <!--<ionic-ratings ratingsobj='ratingsObjectCurrent' index='$index'></ionic-ratings>-->
         </div>
         <div>
           <label style="color: white;">Promedio</label>
-          <rating ng-model="data1.rating1" max="data1.max1" readonly="readOnly"></rating>
+          <rating ng-model="data1.rating1" max="data1.max1" readonly="readOnlyAvg"></rating>
           <!--<ionic-ratings ratingsobj='ratingsObjectAvg' index='$index'></ionic-ratings>-->
         </div>
 

@@ -8,14 +8,14 @@ var app = angular.module('starter', ['ionic', 'ngCordova', 'ionic-ratings','ioni
 function ApiUrl() {
 
   this.getUser = function () {
-    return 'http://localhost:3000/api/user';
+    return 'http://192.168.1.106:3000/api/user';
   }
-  this.getHistoriaClinica = function () {
+  /*this.getHistoriaClinica = function () {
     return 'http://192.168.1.108:3000/api/historiaClinica';
-  }
+  }*/
 
   this.getEstablecimiento = function () {
-    return 'http://localhost:3000/api/establecimiento';
+    return 'http://192.168.1.106:3000/api/establecimiento';
 
   }
 }

@@ -36,6 +36,7 @@
   <script src="http://maps.google.com/maps/api/js?key=AIzaSyAL0nekaSIkOBVcwmULBgI4gBqABRmkltY&sensor=true"></script>
   <script src="../lib/ionic-rating/ionic-rating.min.js"></script>
 
+
 </head>
 <body ng-app="starter" ng-controller="Redirect">
 
@@ -49,21 +50,51 @@
   </ion-header-bar>
 
   <ion-content>
-    <h1>Entrar</h1>
+
+    <br>
+
+    <h1>&nbspEntrar</h1>
 
     <div class="row">
       <div class="col ">
         <label class="item item-input item-stacked-label">
           <span class="input-label">Correo Electrónico</span>
-          <input type="text" placeholder="persona@baniosTuristico.com" ng-model="usuarioLogin.mail">
+          <input type="text" placeholder="persona@correo.com" ng-model="usuarioLogin.mail">
         </label>
         <label class="item item-input item-stacked-label">
           <span class="input-label">Password</span>
           <input type="password" placeholder="Password" ng-model="usuarioLogin.pass">
         </label>
+
+        <ion-list>
+
+          <ion-checkbox ng-repeat="item in devList"
+                        ng-model="item.checked"
+                        ng-checked="item.checked">
+            {{ item.text }}
+          </ion-checkbox>
+
+        </ion-list>
+        <button class="button button-block button-positive" ng-click="sendEmail()">
+          prueba
+        </button>
+
+
         <button class="button button-block button-positive" ng-click="login()">
           Ingresar
         </button>
+
+        <p><a href="begin-password-reset.html">¿No recuerdas tu contraseña?</a></p>
+
+        <!--<textarea id="myText">
+        Lorem ipsum...
+        </textarea>
+        <button onclick="sendMail(); return false">Send</button>-->
+
+        <textarea id="myText">
+          Lorem ipsum...
+        </textarea>
+
       </div>
 
     </div>

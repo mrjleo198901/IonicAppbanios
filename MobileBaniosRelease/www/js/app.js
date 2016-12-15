@@ -3,7 +3,9 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-var app = angular.module('starter', ['ionic', 'ngCordova', 'ionic-ratings','ionic.rating'])
+
+var app = angular.module('starter', ['ionic', 'ngCordova', 'ionic-ratings', 'ionic.rating'])
+
 
 function ApiUrl() {
 
@@ -11,11 +13,16 @@ function ApiUrl() {
     return 'http://192.168.1.106:3000/api/user';
   }
   /*this.getHistoriaClinica = function () {
-    return 'http://192.168.1.108:3000/api/historiaClinica';
-  }*/
+   return 'http://192.168.1.108:3000/api/historiaClinica';
+   }*/
 
   this.getEstablecimiento = function () {
     return 'http://192.168.1.106:3000/api/establecimiento';
+
+  }
+
+  this.getSendEmail = function () {
+    return 'http://192.168.1.106:3000/sendEmail';
 
   }
 }
@@ -27,12 +34,82 @@ app.factory("myProvider", function () {
 });
 
 
-
 app.controller('Redirect', function ($scope, $http, myProvider, $ionicPopup) {
 
+
+  $scope.sendEmail = function () {
+
+    $http({
+
+      method: 'POST',
+      url: myProvider.getSendEmail(),
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      data: {
+        "mailFrom": "mrjleo1989@gmail.com",
+        "mailTo": $scope.usuarioLogin.mail,
+        "title": "Recuperacion de contraseña",
+        "text": /*"<!DOCTYPE html> <html class=\"html\" lang=\"es-ES\"> <head>" + "</head>" + "<body>"
+         + " <center>"
+         + "<h2><font color='blue'>#baniosTuristicoApp</font> </h2>"
+         + " <img  src=\"http://thumbnails117.imagebam.com/52049/e782c3520483472.jpg\"  width=\"290\" height=\"120\"/>"
+         + "<p>Hola amig@!</p>"
+         + "<p>Hemos recibido tu solicitud de recuperacion de contraseña.</p>"
+         + "<p>A continuacion te enviamos tu contraseña, copia y pegala en el Login:</p>"
+         + "<p>Recuerda recomendar la aplicacion con todos tus amigos!</p>"
+         + "<p>Gracias por utilizar la aplicacion</p>"
+         + "<p>baniosTuristicoApp 2017 © RIOBYTES SOLUTIONS</p>"
+         + "</center>"
+         + " </body>"
+         + "</html>"*/
+
+
+        "<!DOCTYPE html>" +
+        "<html class='html' lang='es-ES'>"
+        + "<head>" + "<meta charset='utf-8'>" + "<meta http-equiv='X-UA-Compatible' content='IE=edge'>"
+        + "<meta name='viewport' content='width=device-width, initial-scale=1'>"
+        + "<title>Email Sender</title>"
+        + "<link rel='stylesheet' href='style.css'>"
+        + "<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>"
+        + "<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>"
+        + "</head>"
+        + "<body>"
+        + "<center>"
+        + "<br>"
+        + "<h2><font color='blue'>#baniosTuristicoApp</font></h2>"
+        + "<img  src='http://thumbnails117.imagebam.com/52049/e782c3520483472.jpg'>"
+        + "<p>Hola amig@!</p>"
+        + "<p>Hemos recibido tu solicitud de recuperacion de contraseña.</p>"
+        + "<p>A continuacion te enviamos tu contraseña, copia y pegala en el Login:</p>"
+        + "<p>Aqui contraseña:</p>"
+        + "<p>Recuerda recomendar la aplicacion con todos tus amigos!</p>"
+        + "<p>Gracias por utilizar la aplicacion</p>"
+        + "<p>baniosTuristicoApp 2017 © RIOBYTES SOLUTIONS</p>"
+        + "</center>"
+        + "</body>"
+        + "</html>"
+
+
+      }
+
+    }).then(function successCallback(response) {
+      console.log(response.data);
+      alert("setting parameters");
+
+    }, function errorCallback(response) {
+
+      console.log(response);
+
+    });
+
+  }
+
+  $scope.devList = [
+    {text: "Recuerdame!", checked: false}
+  ];
+
   $scope.redirectSingUp = function () {
-
-
     console.log('entra');
     window.location = 'templates/singup.html';
   }

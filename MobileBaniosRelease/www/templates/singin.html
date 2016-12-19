@@ -36,6 +36,16 @@
   <script src="http://maps.google.com/maps/api/js?key=AIzaSyAL0nekaSIkOBVcwmULBgI4gBqABRmkltY&sensor=true"></script>
   <script src="../lib/ionic-rating/ionic-rating.min.js"></script>
 
+  <style>
+    .popup-title {
+      color : #004444;
+    }
+    .popup-sub-title
+    {
+      color: red;
+    }
+
+  </style>
 
 </head>
 <body ng-app="starter" ng-controller="Redirect">
@@ -75,25 +85,21 @@
           </ion-checkbox>
 
         </ion-list>
-        <button class="button button-block button-positive" ng-click="sendEmail()">
+        <!--<button class="button button-block button-positive" ng-click="getEmailPass()">
           prueba
-        </button>
+        </button>-->
 
 
         <button class="button button-block button-positive" ng-click="login()">
           Ingresar
         </button>
 
-        <p><a href="begin-password-reset.html">¿No recuerdas tu contraseña?</a></p>
+        <p><a  ng-click="generateValidatePopUp()">¿No recuerdas tu contraseña?</a></p>
 
         <!--<textarea id="myText">
         Lorem ipsum...
         </textarea>
         <button onclick="sendMail(); return false">Send</button>-->
-
-        <textarea id="myText">
-          Lorem ipsum...
-        </textarea>
 
       </div>
 

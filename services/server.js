@@ -81,6 +81,8 @@ app.post('/sendEmail', function (req, res) {
 // send the message and get a callback with an error or details of the message that was sent
     server.send(message, function (err, message) {
         console.log(err || message);
+        console.log(mailFrom + '-- ' + mailTo + '-- ' + title );
+
     });
 
 

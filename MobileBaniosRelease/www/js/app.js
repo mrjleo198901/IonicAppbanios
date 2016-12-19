@@ -36,72 +36,147 @@ app.factory("myProvider", function () {
 
 app.controller('Redirect', function ($scope, $http, myProvider, $ionicPopup) {
 
+  function validateEmail(email) {
+    //console.log(email)
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
 
-  $scope.sendEmail = function () {
+  var errorMsg = "";
+  $scope.generateValidatePopUp = function () {
+    var flagCancel = false;
+    $scope.data = {}
+
+    // Custom popup
+    var myPopup = $ionicPopup.show({
+      template: '<input type = "text" ng-model = "data.model">',
+      title: '#baniosTuristico<br> <div style="text-align: center">Porfavor, ingresa tu correo electronico!.</div><br>',
+      subTitle: errorMsg,
+      scope: $scope,
+
+      buttons: [
+        {
+          text: 'Cancel',
+          onTap: function (e) {
+            flagCancel = true;
+          }
+        },
+        {
+          text: '<b>Enviar</b>',
+          type: 'button-positive',
+          onTap: function (e) {
+
+            if (!$scope.data.model) {
+              //don't allow the user to close unless he enters model...
+              e.preventDefault();
+            } else {
+              return $scope.data.model;
+            }
+          }
+        }
+      ]
+    });
+
+    myPopup.then(function (res) {
+      console.log('Tapped!', res + validateEmail(res));
+      if (validateEmail(res) == true && flagCancel == false) {
+        //Enviar correo//
+        $scope.getEmailPass(res);
+
+      } else {
+
+        if (flagCancel == false) {
+          errorMsg = "Ingrese un correo valido!"
+          $scope.generateValidatePopUp();
+        }
+
+      }
+    });
+  };
+
+
+  $scope.getEmailPass = function (res) {
+
+    var pass = null;
+    var url = myProvider.getUser() + '?mail=' + res;
+    //var url = myProvider.getUser() + '?mail=' + $scope.usuarioLogin.mail;
 
     $http({
-
-      method: 'POST',
-      url: myProvider.getSendEmail(),
+      method: 'GET',
+      url: url,
       headers: {
         'Content-Type': 'application/json'
-      },
-      data: {
-        "mailFrom": "mrjleo1989@gmail.com",
-        "mailTo": $scope.usuarioLogin.mail,
-        "title": "Recuperacion de contraseña",
-        "text": /*"<!DOCTYPE html> <html class=\"html\" lang=\"es-ES\"> <head>" + "</head>" + "<body>"
-         + " <center>"
-         + "<h2><font color='blue'>#baniosTuristicoApp</font> </h2>"
-         + " <img  src=\"http://thumbnails117.imagebam.com/52049/e782c3520483472.jpg\"  width=\"290\" height=\"120\"/>"
-         + "<p>Hola amig@!</p>"
-         + "<p>Hemos recibido tu solicitud de recuperacion de contraseña.</p>"
-         + "<p>A continuacion te enviamos tu contraseña, copia y pegala en el Login:</p>"
-         + "<p>Recuerda recomendar la aplicacion con todos tus amigos!</p>"
-         + "<p>Gracias por utilizar la aplicacion</p>"
-         + "<p>baniosTuristicoApp 2017 © RIOBYTES SOLUTIONS</p>"
-         + "</center>"
-         + " </body>"
-         + "</html>"*/
-
-
-        "<!DOCTYPE html>" +
-        "<html class='html' lang='es-ES'>"
-        + "<head>" + "<meta charset='utf-8'>" + "<meta http-equiv='X-UA-Compatible' content='IE=edge'>"
-        + "<meta name='viewport' content='width=device-width, initial-scale=1'>"
-        + "<title>Email Sender</title>"
-        + "<link rel='stylesheet' href='style.css'>"
-        + "<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>"
-        + "<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>"
-        + "</head>"
-        + "<body>"
-        + "<center>"
-        + "<br>"
-        + "<h2><font color='blue'>#baniosTuristicoApp</font></h2>"
-        + "<img  src='http://thumbnails117.imagebam.com/52049/e782c3520483472.jpg'>"
-        + "<p>Hola amig@!</p>"
-        + "<p>Hemos recibido tu solicitud de recuperacion de contraseña.</p>"
-        + "<p>A continuacion te enviamos tu contraseña, copia y pegala en el Login:</p>"
-        + "<p>Aqui contraseña:</p>"
-        + "<p>Recuerda recomendar la aplicacion con todos tus amigos!</p>"
-        + "<p>Gracias por utilizar la aplicacion</p>"
-        + "<p>baniosTuristicoApp 2017 © RIOBYTES SOLUTIONS</p>"
-        + "</center>"
-        + "</body>"
-        + "</html>"
-
-
       }
 
     }).then(function successCallback(response) {
-      console.log(response.data);
-      alert("setting parameters");
+
+      if (response.data.length > 0) {
+        $scope.usuario1 = angular.fromJson(response.data[0]);
+        pass = $scope.usuario1.pass;
+        console.log(pass)
+        ////send email///
+        $http({
+
+          method: 'POST',
+          url: myProvider.getSendEmail(),
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          data: {
+            "mailFrom": "mrjleo1989@gmail.com",
+            "mailTo": res,
+            "title": "Recuperacion de contraseña",
+            "text": "<!DOCTYPE html>" +
+            "<html class='html' lang='es-ES'>"
+            + "<head>" + "<meta charset='utf-8'>" + "<meta http-equiv='X-UA-Compatible' content='IE=edge'>"
+            + "<meta name='viewport' content='width=device-width, initial-scale=1'>"
+            + "<title>Email Sender</title>"
+            + "<link rel='stylesheet' href='style.css'>"
+            + "<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>"
+            + "<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>"
+            + "</head>"
+            + "<body>"
+            + "<center>"
+            + "<br>"
+            + "<h2><font color='blue'>#baniosTuristicoApp</font></h2>"
+            + "<img  src='http://thumbnails117.imagebam.com/52049/e782c3520483472.jpg'>"
+            + "<p>Hola amig@!</p>"
+            + "<p>Hemos recibido tu solicitud de recuperacion de contraseña.</p>"
+            + "<p>A continuacion te enviamos tu contraseña, copia y pegala en el Login:</p>"
+            + "<p>Aqui tu contraseña: </p>" + "<p>" + pass + "</p>"
+            + "<p>Recuerda recomendar la aplicacion con todos tus amigos!</p>"
+            + "<p>Gracias por utilizar la aplicacion</p>"
+            + "<p>baniosTuristicoApp 2017 © RIOBYTES SOLUTIONS</p>"
+            + "</center>"
+            + "</body>"
+            + "</html>"
+
+          }
+
+        }).then(function successCallback(response) {
+          console.log(response.data);
+          alert("setting parameters");
+
+        }, function errorCallback(response) {
+          console.log(response);
+        });
+
+      } else {
+        $ionicPopup.alert({
+          title: 'baniosTuristicoApp',
+          content: '<center>El correo ingresado no existe!.</center>'
+        })
+      }
 
     }, function errorCallback(response) {
 
-      console.log(response);
+      Console.log(response);
 
     });
+
+  }
+
+  $scope.sendEmail = function () {
 
   }
 

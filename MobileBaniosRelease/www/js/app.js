@@ -10,19 +10,19 @@ var app = angular.module('starter', ['ionic', 'ngCordova', 'ionic-ratings', 'ion
 function ApiUrl() {
 
   this.getUser = function () {
-    return 'http://192.168.1.106:3000/api/user';
+    return 'http://localhost:3000/api/user';
   }
   /*this.getHistoriaClinica = function () {
    return 'http://192.168.1.108:3000/api/historiaClinica';
    }*/
 
   this.getEstablecimiento = function () {
-    return 'http://192.168.1.106:3000/api/establecimiento';
+    return 'http://localhost:3000/api/establecimiento';
 
   }
 
   this.getSendEmail = function () {
-    return 'http://192.168.1.106:3000/sendEmail';
+    return 'http://localhost:3000/sendEmail';
 
   }
 }
@@ -245,6 +245,21 @@ app.controller('Redirect', function ($scope, $http, myProvider, $ionicPopup) {
 
   //Sign In//
 
+  /*var LocalStorageManager = {
+    setValue: function(key, value) {
+      window.localStorage.setItem(key, JSON.stringify(value));
+    },
+    getValue: function(key) {
+      try {
+        return JSON.parse(window.localStorage.getItem(key));
+      } catch (e) {
+
+      }
+    }
+  };*/
+
+
+
   $scope.mensaje = "";
   $scope.usuarioLogin = {
     mail: '',
@@ -266,6 +281,9 @@ app.controller('Redirect', function ($scope, $http, myProvider, $ionicPopup) {
 
     }).then(function successCallback(response) {
       $scope.usuario1 = angular.fromJson(response.data[0]);
+
+      //LocalStorageManager.setValue(usuario1._id,usuario1);
+      //console.log("localStorage: "+localstorage.getValue(usuario1._id));
 
       if (response.data.length > 0) {
         console.log($scope.usuario1);

@@ -9,7 +9,9 @@ var userSchema = new mongoose.Schema({
     nombre : String,
     apellido: String,
     pass: String,
-    mail: String
+    mail: String,
+    establecimientoV: Array
+
 
 });
 

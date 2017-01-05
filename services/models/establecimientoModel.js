@@ -11,7 +11,10 @@ var estSchema = new mongoose.Schema({
     average: Number,
     acum: Number,
     ratingNumber: Number,
-    indice: Number
+    img: String,
+    tel: String,
+    add: String,
+    type: Number
 
 });
 

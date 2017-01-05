@@ -19,11 +19,13 @@
   <link href="../lib/ionic/css/ionic.css" rel="stylesheet">
   <link href="../css/style.css" rel="stylesheet">
   <style>
-    .imagebody{
-      background-image: url(../img/fondo1.png)  ;
+    .imagebody {
+      background-image: url(../img/fondo1.png);
       background-size: 120% 100%;
       background-repeat: no-repeat;
     }
+
+
   </style>
   <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
   <link href="css/ionic.app.css" rel="stylesheet">
@@ -42,56 +44,66 @@
   <script src="http://maps.google.com/maps/api/js?key=AIzaSyAL0nekaSIkOBVcwmULBgI4gBqABRmkltY&sensor=true"></script>
   <script src="../lib/ionic-rating/ionic-rating.min.js"></script>
 </head>
-<body   ng-app="starter" ng-controller="Redirect">
+<body ng-app="starter" ng-controller="Redirect">
 
 <ion-pane>
   <ion-header-bar class="bar bar-header bar-dark bar-stable">
-    <button class="button  button-stable ion-close-circled" ng-click="indexPage()">
-      Regresar
-    </button>
     <h1 class="title" style="text-align: center">#baniosTuristico</h1>
-
   </ion-header-bar>
 
+  <ion-content class="imagebody">
 
-  <ion-content  class="imagebody">
-    <br>
-    <br>
     <div class="row">
-      <div class="col col-50" >
-        <img ng-src="../img/iglesiaGray.svg" width="100%" ng-click="ciudadesRedirect()"/>
+      <div class="col col-33"></div>
+      <div class="col col-33">
+        <img ng-src="../img/iglesiaGray.svg" width="105s%" ng-click="ciudadesRedirect()"/>
+        <div class="labelDivs">
+          <ion-label style="color: white">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCiudad</ion-label>
+        </div>
       </div>
-      <div class="col col-50" >
-        <img ng-src="../img/locationGray.svg" width="100%" ng-click="mapsRedirect()"/>
-      </div>
+      <div class="col col-33"></div>
     </div>
-    <div class="row">
-      <div class="col col-50" >
-        <img ng-src="../img/hotelGray.svg" width="100%" ng-click="hotelRedirect()"/>
-      </div>
-      <div class="col col-50" >
-        <img ng-src="../img/fuegoGray.svg" width="100%" ng-click="activitiesRedirect()"/>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col col-50" >
-        <img ng-src="../img/restaurantGray.svg" width="100%" ng-click="restaurantRedirect()"/>
-      </div>
-      <div class="col col-50" >
-        <img ng-src="../img/mapaGray.svg" width="100%" ng-click="guidesRedirect()"/>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col col-50" >
-        <img ng-src="../img/twitterGray.svg" width="100%" ng-click="hashtagRedirect()"/>
-      </div>
 
+    <div class="row">
+      <div class="col col-33">
+        <img ng-src="../img/locationGray.svg" width="105s%" ng-click="mapsRedirect()"/>
+        <ion-label style="color: white">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMapa</ion-label>
+      </div>
+      <div class="col col-33"></div>
+      <div class="col col-33">
+        <img ng-src="../img/hotelGray.svg" width="105s%" ng-click="hotelRedirect()"/>
+        <ion-label style="color: white">&nbsp&nbsp&nbsp&nbspHoteles</ion-label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col-33">
+        <img ng-src="../img/restaurantGray.svg" width="100s%" ng-click="restaurantRedirect()"/>
+        <ion-label style="color: white">&nbsp&nbsp&nbspRestaurantes</ion-label>
+      </div>
+      <div class="col col-33"></div>
+      <div class="col col-33">
+        <img ng-src="../img/mapaGray.svg" width="100s%" ng-click="guidesRedirect()"/>
+        <ion-label style="color: white">&nbsp&nbsp&nbspAgencias</ion-label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col-10"></div>
+      <div class="col col-33">
+        <img ng-src="../img/fuegoGray.svg" width="105s%" ng-click="activitiesRedirect()"/>
+        <ion-label style="color: white">&nbsp&nbsp&nbspActividades</ion-label>
+      </div>
+      <div class="col col-10"></div>
+      <div class="col col-33">
+        <img ng-src="../img/twitterGray.svg" width="105s%" ng-click="hashtagRedirect()"/>
+        <ion-label style="color: white">&nbsp&nbsp&nbspHashTag</ion-label>
+      </div>
     </div>
 
   </ion-content>
 
 </ion-pane>
-
 
 
 </body>

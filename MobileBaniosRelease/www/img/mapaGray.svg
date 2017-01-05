@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
-	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
-]>
-<svg version="1.1"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-	 x="0px" y="0px" width="1000px" height="1000px" viewBox="-43.112 -43.103 1000 1000"
-	 enable-background="new -43.112 -43.103 1000 1000" xml:space="preserve">
-<defs>
-</defs>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1000px" height="1000px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
 <path fill="#535454" stroke="#FFFFFF" stroke-width="20" stroke-miterlimit="10" d="M903.776,456.893
-	c0,246.808-200.067,446.901-446.884,446.901S10,703.7,10,456.893C10,210.084,210.076,10,456.893,10S903.776,210.084,903.776,456.893
-	z"/>
-<polygon fill="#535454" stroke="#FFFFFF" stroke-width="20" stroke-miterlimit="10" points="231.464,244.938 231.464,693.747 
-	400.157,635.665 577.47,703.754 733.479,642.613 733.479,186.046 585.091,244.938 387.507,191.948 "/>
-<polygon fill="#535454" stroke="#FFFFFF" stroke-width="20" stroke-miterlimit="10" points="389.243,249.29 560.457,305.11 
-	560.457,640.51 389.243,580.635 "/>
+	c0,246.809-200.067,446.901-446.885,446.901C210.075,903.794,10,703.7,10,456.893C10,210.084,210.076,10,456.893,10
+	C703.71,10,903.776,210.084,903.776,456.893z"/>
+<polygon fill="#535454" stroke="#FFFFFF" stroke-width="20" stroke-miterlimit="10" points="195.464,256.938 195.464,705.747 
+	364.157,647.665 541.47,715.754 697.479,654.613 697.479,198.046 549.091,256.938 351.507,203.948 "/>
+<polygon fill="#535454" stroke="#FFFFFF" stroke-width="20" stroke-miterlimit="10" points="370.243,270.29 541.457,326.11 
+	541.457,661.51 370.243,601.635 "/>
 </svg>

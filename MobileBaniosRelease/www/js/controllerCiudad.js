@@ -61,9 +61,6 @@ app.controller('CiudadesController', function($scope,$http,myProvider,$ionicSlid
 
   ]
 
-
-
-
   $scope.next = function() {
     $ionicSlideBoxDelegate.next();
   };
@@ -75,9 +72,5 @@ app.controller('CiudadesController', function($scope,$http,myProvider,$ionicSlid
   $scope.slideChanged = function(index) {
     $scope.slideIndex = index;
   };
-
-
-
-
 
 });

@@ -62,6 +62,16 @@
     .button.ng-hide {
       display: none;
     }
+
+    .slider-pager-page {
+      color: white !important;
+    }
+
+    .slider-pager-page.active {
+      color: #f90 !important;
+    }
+
+
   </style>
   <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
   <link href="css/ionic.app.css" rel="stylesheet">
@@ -90,23 +100,22 @@
       Menu
     </button>
     <h1 class="title" style="text-align: center">#baniosTuristico</h1>
-    <button class="button  button-stable ion-log-out" ng-click="">
+    <button class="button  button-stable ion-log-out" ng-click="indexPage()">
       Salir
     </button>
-
   </ion-header-bar>
 
-
   <ion-content class="imagebody" ng-controller="CiudadesController">
-    <br>
-    <br>
     <ion-slide-box on-slide-changed="slideHasChanged($index)">
       <ion-slide ng-repeat="aux in lista">
         <div class="box blue" style="color: white">
           <center><h3 style="color: white">{{aux.titulo}}</h3><br>
+
             <div style="text-align:justify">
               <img style="max-width: 100%" src="{{aux.img}}"><br>
-              <p >{{aux.desc}}</p>
+              <div style="margin-left: 5%; margin-right: 5%">
+                <p style="text-align: justify">{{aux.desc}}</p>
+              </div>
             </div>
           </center>
         </div>

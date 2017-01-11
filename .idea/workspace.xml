@@ -2,80 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="977d3811-68b7-41d6-acd7-1d01e0f84125" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\MobileBaniosRelease\res\drawable-port-hdpi\screen.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\MobileBaniosRelease\res\drawable-port-ldpi\screen.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\MobileBaniosRelease\res\drawable-port-mdpi\screen.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\MobileBaniosRelease\res\drawable-port-xhdpi\screen.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\MobileBaniosRelease\res\drawable-port-xxhdpi\screen.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\MobileBaniosRelease\res\drawable-port-xxxhdpi\screen.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\MobileBaniosRelease\www\img\Restaurantes.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\MobileBaniosRelease\www\img\iconFinder\Ciudad.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\MobileBaniosRelease\www\img\iconFinder\Mapa.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\MobileBaniosRelease\www\img\iconFinder\actividades.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\MobileBaniosRelease\www\img\iconFinder\hotel.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Leo\WebstormProjects\IonicAppBanios\IonicAppbanios\MobileBaniosRelease\www\img\iconFinder\restaurant.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/img/hoteles/alisamay.PNG" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/img/hoteles/alisamay.PNG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/img/actividades/canopy.PNG" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/img/actividades/canopy.PNG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/img/actividades/canyoning.PNG" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/img/actividades/canyoning.PNG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/img/hoteles/dondeMarcelo.PNG" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/img/hoteles/dondeMarcelo.PNG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/img/actividades/downhill.PNG" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/img/actividades/downhill.PNG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/resources/android/icon/drawable-hdpi-icon.png" afterPath="$PROJECT_DIR$/MobileBaniosRelease/resources/android/icon/drawable-hdpi-icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/resources/android/splash/drawable-land-hdpi-screen.png" afterPath="$PROJECT_DIR$/MobileBaniosRelease/resources/android/splash/drawable-land-hdpi-screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/resources/android/splash/drawable-land-ldpi-screen.png" afterPath="$PROJECT_DIR$/MobileBaniosRelease/resources/android/splash/drawable-land-ldpi-screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/resources/android/splash/drawable-land-mdpi-screen.png" afterPath="$PROJECT_DIR$/MobileBaniosRelease/resources/android/splash/drawable-land-mdpi-screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/resources/android/splash/drawable-land-xhdpi-screen.png" afterPath="$PROJECT_DIR$/MobileBaniosRelease/resources/android/splash/drawable-land-xhdpi-screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/resources/android/splash/drawable-land-xxhdpi-screen.png" afterPath="$PROJECT_DIR$/MobileBaniosRelease/resources/android/splash/drawable-land-xxhdpi-screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/resources/android/splash/drawable-land-xxxhdpi-screen.png" afterPath="$PROJECT_DIR$/MobileBaniosRelease/resources/android/splash/drawable-land-xxxhdpi-screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/resources/android/icon/drawable-ldpi-icon.png" afterPath="$PROJECT_DIR$/MobileBaniosRelease/resources/android/icon/drawable-ldpi-icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/resources/android/icon/drawable-mdpi-icon.png" afterPath="$PROJECT_DIR$/MobileBaniosRelease/resources/android/icon/drawable-mdpi-icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/resources/android/icon/drawable-xhdpi-icon.png" afterPath="$PROJECT_DIR$/MobileBaniosRelease/resources/android/icon/drawable-xhdpi-icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/resources/android/icon/drawable-xxhdpi-icon.png" afterPath="$PROJECT_DIR$/MobileBaniosRelease/resources/android/icon/drawable-xxhdpi-icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/resources/android/icon/drawable-xxxhdpi-icon.png" afterPath="$PROJECT_DIR$/MobileBaniosRelease/resources/android/icon/drawable-xxxhdpi-icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/img/hoteles/elvita.PNG" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/img/hoteles/elvita.PNG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/res/mipmap-hdpi/icon.png" afterPath="$PROJECT_DIR$/MobileBaniosRelease/res/mipmap-hdpi/icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/res/mipmap-ldpi/icon.png" afterPath="$PROJECT_DIR$/MobileBaniosRelease/res/mipmap-ldpi/icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/res/mipmap-mdpi/icon.png" afterPath="$PROJECT_DIR$/MobileBaniosRelease/res/mipmap-mdpi/icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/res/mipmap-xhdpi/icon.png" afterPath="$PROJECT_DIR$/MobileBaniosRelease/res/mipmap-xhdpi/icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/res/mipmap-xxhdpi/icon.png" afterPath="$PROJECT_DIR$/MobileBaniosRelease/res/mipmap-xxhdpi/icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/res/mipmap-xxxhdpi/icon.png" afterPath="$PROJECT_DIR$/MobileBaniosRelease/res/mipmap-xxxhdpi/icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/img/hoteles/jardinesChamana.PNG" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/img/hoteles/jardinesChamana.PNG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/img/hoteles/lunaRuntun.PNG" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/img/hoteles/lunaRuntun.PNG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/img/hoteles/manatialVida.PNG" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/img/hoteles/manatialVida.PNG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/img/actividades/puenting.PNG" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/img/actividades/puenting.PNG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/img/actividades/rafting.PNG" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/img/actividades/rafting.PNG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/img/hoteles/samari.PNG" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/img/hoteles/samari.PNG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/img/hoteles/sangay.PNG" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/img/hoteles/sangay.PNG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/res/drawable-land-hdpi/screen.png" afterPath="$PROJECT_DIR$/MobileBaniosRelease/res/drawable-land-hdpi/screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/res/drawable-land-ldpi/screen.png" afterPath="$PROJECT_DIR$/MobileBaniosRelease/res/drawable-land-ldpi/screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/res/drawable-land-mdpi/screen.png" afterPath="$PROJECT_DIR$/MobileBaniosRelease/res/drawable-land-mdpi/screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/res/drawable-land-xhdpi/screen.png" afterPath="$PROJECT_DIR$/MobileBaniosRelease/res/drawable-land-xhdpi/screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/res/drawable-land-xxhdpi/screen.png" afterPath="$PROJECT_DIR$/MobileBaniosRelease/res/drawable-land-xxhdpi/screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/res/drawable-land-xxxhdpi/screen.png" afterPath="$PROJECT_DIR$/MobileBaniosRelease/res/drawable-land-xxxhdpi/screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/img/actividades/spa.PNG" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/img/actividades/spa.PNG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/img/hoteles/volcano.PNG" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/img/hoteles/volcano.PNG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/templates/activities.html" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/templates/activities.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/js/app.js" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/templates/ciudades.html" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/templates/ciudades.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/config.xml" afterPath="$PROJECT_DIR$/MobileBaniosRelease/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerActivities.js" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerActivities.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerCiudad.js" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerCiudad.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerHotelNew.js" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerHotelNew.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/debug.log" afterPath="$PROJECT_DIR$/MobileBaniosRelease/debug.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/models/establecimientoModel.js" afterPath="$PROJECT_DIR$/services/models/establecimientoModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/img/fuegoGray.svg" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/img/fuegoGray.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/templates/guides.html" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/templates/guides.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/templates/hashtag.html" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/templates/hashtag.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/templates/hotel.html" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/templates/hotel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/img/hotelGray.svg" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/img/hotelGray.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/lib/ionic-rating/ionic-rating.min.js" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/lib/ionic-rating/ionic-rating.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/templates/map.html" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/templates/map.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/img/mapaGray.svg" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/img/mapaGray.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/templates/menuAdm.html" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/templates/menuAdm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/templates/restaurant.html" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/templates/restaurant.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/img/restaurantGray.svg" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/img/restaurantGray.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/templates/singin.html" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/templates/singin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobileBaniosRelease/www/img/twitterGray.svg" afterPath="$PROJECT_DIR$/MobileBaniosRelease/www/img/twitterGray.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/models/userModel.js" afterPath="$PROJECT_DIR$/services/models/userModel.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IonicAppbanios.iws" />
@@ -101,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/hotel.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="131" column="81" selection-start-line="131" selection-start-column="70" selection-end-line="131" selection-end-column="81" />
+              <caret line="126" column="40" selection-start-line="126" selection-start-column="28" selection-end-line="126" selection-end-column="40" />
               <folding>
                 <element signature="n#style#0;n#h3#0;n#center#0;n#div#0;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#center#0;n#div#0;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -115,11 +43,23 @@
       <file leaf-file-name="controllerHotelNew.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerHotelNew.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5609137">
-              <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+            <state vertical-scroll-proportion="4.969543">
+              <caret line="199" column="11" selection-start-line="199" selection-start-column="11" selection-end-line="199" selection-end-column="11" />
               <folding>
-                <marker date="1483589113906" expanded="true" signature="3439:3457" placeholder="..." />
-                <marker date="1483589113906" expanded="true" signature="3532:3550" placeholder="..." />
+                <marker date="1484162968511" expanded="true" signature="5439:5457" placeholder="..." />
+                <marker date="1484162968511" expanded="true" signature="5532:5550" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="292" column="82" selection-start-line="292" selection-start-column="10" selection-end-line="292" selection-end-column="82" />
+              <folding>
+                <marker date="1483559622500" expanded="true" signature="1500:1518" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -135,22 +75,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-              <folding>
-                <marker date="1483559622500" expanded="true" signature="1500:1518" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="singin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/singin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-31.384615">
               <caret line="86" column="72" selection-start-line="86" selection-start-column="72" selection-end-line="86" selection-end-column="72" />
               <folding />
             </state>
@@ -288,104 +216,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IonicAppbanios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IonicAppbanios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobileBaniosRelease" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IonicAppbanios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IonicAppbanios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobileBaniosRelease" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IonicAppbanios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IonicAppbanios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobileBaniosRelease" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IonicAppbanios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IonicAppbanios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobileBaniosRelease" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IonicAppbanios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IonicAppbanios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobileBaniosRelease" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -670,14 +500,20 @@
       <option name="project" value="LOCAL" />
       <updated>1482127311580</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="ratings">
+      <created>1483589155439</created>
+      <option name="number" value="00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1483589155439</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1370" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2424925" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2424925" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5052239" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -738,7 +574,8 @@
     <MESSAGE value="adding ngCordova&#10;" />
     <MESSAGE value="server directory&#10;" />
     <MESSAGE value="update pass recovery process&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="update pass recovery process&#10;" />
+    <MESSAGE value="ratings" />
+    <option name="LAST_COMMIT_MESSAGE" value="ratings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1046,26 +883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/hotel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="131" column="81" selection-start-line="131" selection-start-column="70" selection-end-line="131" selection-end-column="81" />
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#center#0;n#div#0;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#center#0;n#div#0;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#center#0;n#div#0;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#div#0;n#center#0;n#div#0;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/singup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46195653">
-          <caret line="76" column="11" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/routes/userApi.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1077,6 +894,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/singup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4673913">
+          <caret line="76" column="11" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/hotel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="126" column="40" selection-start-line="126" selection-start-column="28" selection-end-line="126" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#center#0;n#div#0;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#center#0;n#div#0;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#center#0;n#div#0;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#0;n#center#0;n#div#0;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-pane#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/singin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-31.384615">
+          <caret line="86" column="72" selection-start-line="86" selection-start-column="72" selection-end-line="86" selection-end-column="72" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1088,18 +934,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/templates/singin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="86" column="72" selection-start-line="86" selection-start-column="72" selection-end-line="86" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <caret line="292" column="82" selection-start-line="292" selection-start-column="10" selection-end-line="292" selection-end-column="82" />
           <folding>
             <marker date="1483559622500" expanded="true" signature="1500:1518" placeholder="..." />
           </folding>
@@ -1108,11 +946,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MobileBaniosRelease/www/js/controllerHotelNew.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5609137">
-          <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+        <state vertical-scroll-proportion="4.969543">
+          <caret line="199" column="11" selection-start-line="199" selection-start-column="11" selection-end-line="199" selection-end-column="11" />
           <folding>
-            <marker date="1483589113906" expanded="true" signature="3439:3457" placeholder="..." />
-            <marker date="1483589113906" expanded="true" signature="3532:3550" placeholder="..." />
+            <marker date="1484162968511" expanded="true" signature="5439:5457" placeholder="..." />
+            <marker date="1484162968511" expanded="true" signature="5532:5550" placeholder="..." />
           </folding>
         </state>
       </provider>

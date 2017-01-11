@@ -5,13 +5,18 @@
 app.controller('HotelControllerNew', function ($scope, $http, myProvider, $ionicSlideBoxDelegate, $ionicPopup) {
 
   $scope.sample = [{}];
-  var avg = 1;
-  var ind = 0;
   var currentRating = 0;
   var res = 0;
+  var currentUser = angular.fromJson(window.localStorage.getItem("usuario"));
+  var alreadyVoted = false;
+  var estID = "";
+  var estRate = 0;
+  var acum = 0;
+  var ratingNumber = 0;
 
   //Get Establishments
   var url = myProvider.getEstablecimiento() + '?type=' + res;
+
   $http({
     method: 'GET',
     url: url,
@@ -23,49 +28,51 @@ app.controller('HotelControllerNew', function ($scope, $http, myProvider, $ionic
     for (var i = 0; i < response.data.length; i++) {
       $scope.sample[i] = angular.fromJson(response.data[i]);
     }
-
     //setting the avg to the 1st element(hotel)
     $scope.data1.rating1 = $scope.sample[0].average;
     //Get user to verify establishmentsArray
     var hotelID = $scope.sample[0]._id;
-    console.log(hotelID);
-    var user = angular.fromJson(window.localStorage.getItem("usuario"));
-    //console.log(user)
-    //console.log(user.establecimientoV[0]);
-    //console.log(user.establecimientoV[1]);
-    var n = user.establecimientoV.length;
-    var aux;
-    var array2 = [];
-    var array3 = [];
-    for (var i = 0; i < n; i++) {
-      aux = user.establecimientoV[i].split("-");
-      array2[i] = aux[0];
-      array3[i] = aux[1];
-    }
-    console.log(array2);
-    var a = array2.indexOf(hotelID);
-    if (a != -1) {
-        console.log(array3[a]);
-    }
-
-
-    //avg = getAvg(ind);
-
+    checkRateUserHotel(hotelID);
   }, function errorCallback(response) {
     $scope.mesaje = response.mensaje;
 
   });
 
+  function checkRateUserHotel(hotelID) {
+
+    var n = currentUser.establecimientoV.length;
+    var aux;
+    var array2 = [];
+    var array3 = [];
+    for (var i = 0; i < n; i++) {
+      aux = currentUser.establecimientoV[i].split("-");
+      array2[i] = aux[0];
+      array3[i] = aux[1];
+    }
+    var a = array2.indexOf(hotelID);
+    console.log("hotelID: " + hotelID);
+    if (a != -1) {
+      $scope.data.rating = array3[a];
+      $scope.readOnlyCur = true;
+      alreadyVoted = true;
+
+    } else {
+      $scope.data.rating = 0;
+      $scope.readOnlyCur = false;
+      alreadyVoted = false;
+    }
+
+  }
 
   $scope.slideHasChanged = function ($index) {
 
     $scope.data1.rating1 = $scope.sample[$index].average;
     $scope.readOnlyAvg = true;
-    //console.log( $scope.sample[$index].average + " indice: "+$index);
-
-    if ($index === 0) {
-
-    }
+    var hotelID = $scope.sample[$index]._id;
+    checkRateUserHotel(hotelID);
+    estID = hotelID;
+    acum = $scope.sample[$index].acum;
+    ratingNumber = $scope.sample[$index].ratingNumber;
   };
 
   $scope.next = function () {
@@ -81,21 +88,6 @@ app.controller('HotelControllerNew', function ($scope, $http, myProvider, $ionic
     $scope.slideIndex = index;
   };
 
-  /*function getAvg(ind) {
-   var n = $scope.sample.length;
-   var avg;
-   for (var i = 0; i < n; i++) {
-   if ($scope.sample[i].indice == ind) {
-   avg = $scope.sample[i].average;
-   break;
-   }
-   }
-   //console.log(avg);
-   $scope.data1.rating1 = avg;
-   //$scope.readOnlyAvg = true;
-   return avg;
-   }*/
-
   //Current//
   $scope.rating = 4;
   $scope.data = {
@@ -109,17 +101,18 @@ app.controller('HotelControllerNew', function ($scope, $http, myProvider, $ionic
     rating1: 0,
     max1: 5
   }
-  $scope.readOnlyCur = false;
+  //$scope.readOnlyCur = false;
   $scope.readOnlyAvg = true;
 
   $scope.$watch('data.rating', function () {
     currentRating = $scope.data.rating;
-    console.log('New value: ' + $scope.data.rating);
-    activateRO();
+    //console.log('New value: ' + $scope.data.rating);
+    if (!alreadyVoted)
+      activateRO();
   });
 
   function activateRO() {
-    console.log(currentRating)
+    //console.log(currentRating)
     if (currentRating > 0) {
       //message//
       setTimeout(function () {
@@ -127,6 +120,7 @@ app.controller('HotelControllerNew', function ($scope, $http, myProvider, $ionic
       }, 300);
       //set true//
       $scope.readOnlyCur = true;
+      estRate = currentRating;
     }
   }
 
@@ -140,12 +134,74 @@ app.controller('HotelControllerNew', function ($scope, $http, myProvider, $ionic
           text: 'OK',
           type: 'button-positive',
           onTap: function (e) {
-            //Save rating in establishmentArray
+
+            //Save rating in establishmentArray *************************PENDIENTE******************
+            //get whole array, concat (-) hotelID + currentRating, add to array, do put with user ID
+            var register = estID.concat("-").concat(estRate);
+            var vecEst = currentUser.establecimientoV;
+            vecEst.push(register);
+            //Update localStorage
+            console.log(currentUser);
+            var updatedUser = {
+              "_id": currentUser._id,
+              "nombre": currentUser.nombre,
+              "apellido": currentUser.pass,
+              "pass": currentUser.pass,
+              "mail": currentUser.mail,
+              "establecimientoV": vecEst
+            }
+            window.localStorage.setItem("usuario", JSON.stringify(updatedUser));
+
+            var url = myProvider.getUser() + '/' + currentUser._id;
+            //console.log(url)
+            $http({
+              method: 'PUT',
+              url: url,
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              data: {
+                "establecimientoV": vecEst
+              }
+
+            }).then(function successCallback(response) {
+              //console.log(currentUser.establecimientoV)
+              //console.log(vecEst)
+
+
+            }, function errorCallback(response) {
+              $scope.mesaje = response.mensaje;
+
+            });
+
+            acum = ratingNumber + estRate;
+            ratingNumber++;
+
+            var url = myProvider.getEstablecimiento() + '/' + estID;
+            $http({
+              method: 'PUT',
+              url: url,
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              data: {
+                "acum": acum,
+                "ratingNumber": ratingNumber
+              }
+
+            }).then(function successCallback(response) {
+
+
+            }, function errorCallback(response) {
+              $scope.mesaje = response.mensaje;
+
+            });
 
           }
         }]
       })
     }
+
     if (type == 2) {
       $ionicPopup.alert({
         title: 'baniosTuristico!',
@@ -166,99 +222,4 @@ app.controller('HotelControllerNew', function ($scope, $http, myProvider, $ionic
     }
   }
 
-
 });
-
-
-// Generated by CoffeeScript 1.9.1
-/*(function () {
- angular.module('ionic.rating', []).constant('ratingConfig', {
- max: 5,
- stateOn: null,
- stateOff: null
- }).controller('RatingController', function ($scope, $attrs, ratingConfig) {
- var ngModelCtrl;
- ngModelCtrl = {
- $setViewValue: angular.noop
- };
- this.init = function (ngModelCtrl_) {
- var max, ratingStates;
- ngModelCtrl = ngModelCtrl_;
- ngModelCtrl.$render = this.render;
- this.stateOn = angular.isDefined($attrs.stateOn) ? $scope.$parent.$eval($attrs.stateOn) : ratingConfig.stateOn;
- this.stateOff = angular.isDefined($attrs.stateOff) ? $scope.$parent.$eval($attrs.stateOff) : ratingConfig.stateOff;
- max = angular.isDefined($attrs.max) ? $scope.$parent.$eval($attrs.max) : ratingConfig.max;
- ratingStates = angular.isDefined($attrs.ratingStates) ? $scope.$parent.$eval($attrs.ratingStates) : new Array(max);
- return $scope.range = this.buildTemplateObjects(ratingStates);
- };
- this.buildTemplateObjects = function (states) {
- var i, j, len, ref;
- ref = states.length;
- for (j = 0, len = ref.length; j < len; j++) {
- i = ref[j];
- states[i] = angular.extend({
- index: 1
- }, {
- stateOn: this.stateOn,
- stateOff: this.stateOff
- }, states[i]);
- }
- return states;
- };
- $scope.rate = function (value) {
- if (!$scope.readonly && value >= 0 && value <= $scope.range.length) {
- ngModelCtrl.$setViewValue(value);
- return ngModelCtrl.$render();
- }
- };
- $scope.reset = function () {
- $scope.value = ngModelCtrl.$viewValue;
-
- return $scope.onLeave();
- };
- $scope.enter = function (value) {
- if (!$scope.readonly) {
- $scope.value = value;
- }
- return $scope.onHover({
- value: value
- });
- };
- $scope.onKeydown = function (evt) {
- if (/(37|38|39|40)/.test(evt.which)) {
- evt.preventDefault();
- evt.stopPropagation();
- return $scope.rate($scope.value + (evt.which === 38 || evt.which === 39 ? {
- 1: -1
- } : void 0));
- }
- };
- this.render = function () {
- return $scope.value = ngModelCtrl.$viewValue;
- };
- return this;
- }).directive('rating', function () {
- return {
- restrict: 'EA',
- require: ['rating', 'ngModel'],
- scope: {
- readonly: '=?',
- onHover: '&',
- onLeave: '&'
- },
- controller: 'RatingController',
- template: '<ul class="rating" ng-mouseleave="reset()" ng-keydown="onKeydown($event)">' + '<li ng-repeat="r in range track by $index" ng-click="rate($index + 1)"><i class="icon" ng-class="$index < value && (r.stateOn || \'ion-ios-star\') || (r.stateOff || \'ion-ios-star-outline\')"></i></li>' + '</ul>',
- replace: true,
- link: function (scope, element, attrs, ctrls) {
- var ngModelCtrl, ratingCtrl;
- ratingCtrl = ctrls[0];
- ngModelCtrl = ctrls[1];
- if (ngModelCtrl) {
- return ratingCtrl.init(ngModelCtrl);
- }
- }
- };
- });
-
- }).call(this);*/
-

@@ -7,12 +7,83 @@
   <link rel="manifest" href="manifest.json">
   <link href="../lib/ionic/css/ionic.css" rel="stylesheet">
   <link href="../css/style.css" rel="stylesheet">
+  <link href="../lib/ionic-rating/ionic-rating.css">
   <style>
-    .imagebody{
-      background-image: url(../img/fondo1.png)  ;
+    .imagebody {
+      background-image: url(../img/fondo1.png);
       background-size: 120% 100%;
       background-repeat: no-repeat;
     }
+
+    .slider {
+      height: 100%;
+    }
+
+    .slider-slide {
+      padding-top: 80px;
+      color: #000;
+      background-color: transparent;
+      text-align: center;
+
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 300;
+    }
+
+    #logo {
+      margin: 30px 0px;
+    }
+
+    #list {
+      width: 170px;
+      margin: 30px auto;
+      font-size: 20px;
+    }
+
+    #list ol {
+      margin-top: 30px;
+    }
+
+    #list ol li {
+      text-align: left;
+      list-style: decimal;
+      margin: 10px 0px;
+    }
+
+    .button.ng-hide {
+      display: none;
+    }
+
+    .slider-pager-page {
+      color: white !important;
+    }
+
+    .slider-pager-page.active {
+      color: #f90 !important;
+    }
+
+    body {
+      cursor: url('http://ionicframework.com/img/finger.png'), auto;
+    }
+
+    .ionic_ratings .icon {
+      font-size: 50px;
+    }
+
+    .ionic_ratings .read_only {
+      pointer-events: none;
+    }
+
+    ul.rating li {
+      display: inline;
+      border: 0px;
+      background: none;
+      padding: 5px 10px;
+    }
+
+    ul.rating li i {
+      font-size: 40px;
+    }
+
   </style>
   <script src="../lib/ionic/js/ionic.bundle.js"></script>
   <script src="../cordova.js"></script>
@@ -20,36 +91,52 @@
   <script src="../js/controllerRestaurant.js"></script>
   <script src="../lib/ngCordova/dist/ng-cordova.js"></script>
   <script src="http://maps.google.com/maps/api/js?key=AIzaSyAL0nekaSIkOBVcwmULBgI4gBqABRmkltY&sensor=true"></script>
-  <script src="../lib/ionic-rating/ionic-rating.min.js"></script>
   <script src="../lib/ionic-ratings/dist/ionic-ratings.min.js"></script>
+  <script src="../lib/ionic-rating/ionic-rating.min.js"></script>
 </head>
-<body   ng-app="starter" ng-controller="Redirect">
+<body ng-app="starter" ng-controller="Redirect">
 <ion-pane>
   <ion-header-bar class="bar bar-header bar-dark bar-stable">
     <button class="button  button-stable ion-android-home" ng-click="menuAdmRedirect()">
       Menu
     </button>
     <h1 class="title" style="text-align: center">#baniosTuristico</h1>
+
     <button class="button  button-stable ion-log-out" ng-click="indexPage()">
       Salir
     </button>
   </ion-header-bar>
-  <ion-content  class="imagebody" ng-controller="RestaurantController">
-    <br>
-    <br>
+
+  <ion-content class="imagebody" ng-controller="RestaurantController">
     <ion-slide-box on-slide-changed="slideHasChanged($index)">
-      <ion-slide ng-repeat="aux in lista">
+      <ion-slide ng-repeat="aux in sample">
         <div class="box blue" style="color: white">
-          <center><h3 style="color: white">{{aux.titulo}}</h3><br>
-            <img style="max-width: 100%" src="{{aux.img}}"><br>
+          <center><h3 style="color: white">{{aux.name}}</h3><br>
+            <!--<img style="max-width: 100%" src="{{aux.img}}"><br>-->
+            <img src="{{aux.img}}"><br>
             <div style="text-align:justify">
-              <p>{{aux.telefono}}</p>
-              <p>{{aux.direccion}}</p>
+              <p style="text-align: center">{{aux.tel}}</p>
+              <p style="text-align: center">{{aux.add}}</p>
             </div>
           </center>
         </div>
+
+        <div id="currentDiv">
+          <label style="color: white;">Calificacion Actual</label>
+          <!--<rating ng-model="rating.rate" max="rating.max"></rating>-->
+          <rating ng-model="data.rating" max="data.max" readonly="readOnlyCur"></rating>
+          <!--<ionic-ratings ratingsobj='ratingsObjectCurrent' index='$index'></ionic-ratings>-->
+        </div>
+        <div>
+          <label style="color: white;">Promedio</label>
+          <rating ng-model="data1.rating1" max="data1.max1" readonly="readOnlyAvg"></rating>
+          <!--<ionic-ratings ratingsobj='ratingsObjectAvg' index='$index'></ionic-ratings>-->
+        </div>
+
       </ion-slide>
+
     </ion-slide-box>
+
   </ion-content>
 </ion-pane>
 </body>

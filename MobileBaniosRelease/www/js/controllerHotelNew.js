@@ -31,8 +31,9 @@ app.controller('HotelControllerNew', function ($scope, $http, myProvider, $ionic
     //setting the avg to the 1st element(hotel)
     $scope.data1.rating1 = $scope.sample[0].average;
     //Get user to verify establishmentsArray
-    var hotelID = $scope.sample[0]._id;
-    checkRateUserHotel(hotelID);
+    //var hotelID = $scope.sample[0]._id;
+    estID = $scope.sample[0]._id;
+    checkRateUserHotel(estID);
   }, function errorCallback(response) {
     $scope.mesaje = response.mensaje;
 
@@ -44,6 +45,7 @@ app.controller('HotelControllerNew', function ($scope, $http, myProvider, $ionic
     var aux;
     var array2 = [];
     var array3 = [];
+
     for (var i = 0; i < n; i++) {
       aux = currentUser.establecimientoV[i].split("-");
       array2[i] = aux[0];
@@ -141,7 +143,6 @@ app.controller('HotelControllerNew', function ($scope, $http, myProvider, $ionic
             var vecEst = currentUser.establecimientoV;
             vecEst.push(register);
             //Update localStorage
-            console.log(currentUser);
             var updatedUser = {
               "_id": currentUser._id,
               "nombre": currentUser.nombre,
@@ -151,6 +152,7 @@ app.controller('HotelControllerNew', function ($scope, $http, myProvider, $ionic
               "establecimientoV": vecEst
             }
             window.localStorage.setItem("usuario", JSON.stringify(updatedUser));
+            //Update Average
 
             var url = myProvider.getUser() + '/' + currentUser._id;
             //console.log(url)

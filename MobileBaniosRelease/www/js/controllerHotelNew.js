@@ -28,6 +28,7 @@ app.controller('HotelControllerNew', function ($scope, $http, myProvider, $ionic
     for (var i = 0; i < response.data.length; i++) {
       $scope.sample[i] = angular.fromJson(response.data[i]);
     }
+    console.log($scope.sample[0]);
     //setting the avg to the 1st element(hotel)
     $scope.data1.rating1 = $scope.sample[0].average;
     //Get user to verify establishmentsArray
@@ -152,10 +153,8 @@ app.controller('HotelControllerNew', function ($scope, $http, myProvider, $ionic
               "establecimientoV": vecEst
             }
             window.localStorage.setItem("usuario", JSON.stringify(updatedUser));
-            //Update Average
-
+            //Save in user document
             var url = myProvider.getUser() + '/' + currentUser._id;
-            //console.log(url)
             $http({
               method: 'PUT',
               url: url,
@@ -167,18 +166,18 @@ app.controller('HotelControllerNew', function ($scope, $http, myProvider, $ionic
               }
 
             }).then(function successCallback(response) {
-              //console.log(currentUser.establecimientoV)
-              //console.log(vecEst)
-
 
             }, function errorCallback(response) {
               $scope.mesaje = response.mensaje;
 
             });
-
+            //Update rating % acumulator
             acum = ratingNumber + estRate;
             ratingNumber++;
-
+            //Update Average
+            var newAvg = acum / ratingNumber;
+            $scope.data1.rating1 = newAvg;
+            //Update establishment document
             var url = myProvider.getEstablecimiento() + '/' + estID;
             $http({
               method: 'PUT',
@@ -188,7 +187,8 @@ app.controller('HotelControllerNew', function ($scope, $http, myProvider, $ionic
               },
               data: {
                 "acum": acum,
-                "ratingNumber": ratingNumber
+                "ratingNumber": ratingNumber,
+                "average": newAvg
               }
 
             }).then(function successCallback(response) {

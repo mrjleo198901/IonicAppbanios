@@ -35,5 +35,6 @@
     <splash src="resources\android\splash\drawable-land-xxxhdpi-screen.png" density="land-xxxhdpi"/>
   </platform>
   <allow-navigation href="http://192.168.1.106:8100"/>
+  <allow-navigation href="http://192.168.1.109:8100"/>
   <icon src="resources\android\icon\drawable-xhdpi-icon.png"/>
 </widget>

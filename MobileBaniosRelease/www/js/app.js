@@ -10,19 +10,19 @@ var app = angular.module('starter', ['ionic', 'ngCordova', 'ionic-ratings', 'ion
 function ApiUrl() {
 
   this.getUser = function () {
-    return 'http://localhost:3000/api/user';
+    return 'http://192.168.1.109:3000/api/user';
   }
   /*this.getHistoriaClinica = function () {
    return 'http://192.168.1.108:3000/api/historiaClinica';
    }*/
 
   this.getEstablecimiento = function () {
-    return 'http://localhost:3000/api/establecimiento';
+    return 'http://192.168.1.109:3000/api/establecimiento';
 
   }
 
   this.getSendEmail = function () {
-    return 'http://localhost:3000/sendEmail';
+    return 'http://192.168.1.109:3000/sendEmail';
 
   }
 }
@@ -246,19 +246,17 @@ app.controller('Redirect', function ($scope, $http, myProvider, $ionicPopup) {
   //Sign In//
 
   /*var LocalStorageManager = {
-    setValue: function(key, value) {
-      window.localStorage.setItem(key, JSON.stringify(value));
-    },
-    getValue: function(key) {
-      try {
-        return JSON.parse(window.localStorage.getItem(key));
-      } catch (e) {
+   setValue: function(key, value) {
+   window.localStorage.setItem(key, JSON.stringify(value));
+   },
+   getValue: function(key) {
+   try {
+   return JSON.parse(window.localStorage.getItem(key));
+   } catch (e) {
 
-      }
-    }
-  };*/
-
-
+   }
+   }
+   };*/
 
   $scope.mensaje = "";
   $scope.usuarioLogin = {

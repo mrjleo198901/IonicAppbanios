@@ -34,6 +34,7 @@ app.controller('HotelControllerNew', function ($scope, $http, myProvider, $ionic
     //Get user to verify establishmentsArray
     //var hotelID = $scope.sample[0]._id;
     estID = $scope.sample[0]._id;
+    estRate = $scope.sample[0].acum;
     checkRateUserHotel(estID);
   }, function errorCallback(response) {
     $scope.mesaje = response.mensaje;
@@ -72,6 +73,7 @@ app.controller('HotelControllerNew', function ($scope, $http, myProvider, $ionic
     $scope.data1.rating1 = $scope.sample[$index].average;
     $scope.readOnlyAvg = true;
     var hotelID = $scope.sample[$index]._id;
+    estRate = $scope.sample[$index].acum;
     checkRateUserHotel(hotelID);
     estID = hotelID;
     acum = $scope.sample[$index].acum;
@@ -123,7 +125,7 @@ app.controller('HotelControllerNew', function ($scope, $http, myProvider, $ionic
       }, 300);
       //set true//
       $scope.readOnlyCur = true;
-      estRate = currentRating;
+      //estRate = currentRating;
     }
   }
 
@@ -140,7 +142,7 @@ app.controller('HotelControllerNew', function ($scope, $http, myProvider, $ionic
 
             //Save rating in establishmentArray *************************PENDIENTE******************
             //get whole array, concat (-) hotelID + currentRating, add to array, do put with user ID
-            var register = estID.concat("-").concat(estRate);
+            var register = estID.concat("-").concat(currentRating);
             var vecEst = currentUser.establecimientoV;
             vecEst.push(register);
             //Update localStorage
@@ -172,7 +174,7 @@ app.controller('HotelControllerNew', function ($scope, $http, myProvider, $ionic
 
             });
             //Update rating % acumulator
-            acum = ratingNumber + estRate;
+            acum = currentRating + estRate;
             ratingNumber++;
             //Update Average
             var newAvg = acum / ratingNumber;

@@ -84,6 +84,10 @@
       font-size: 40px;
     }
 
+    ul.rating {
+      color: honeydew !important;
+    }
+
   </style>
   <script src="../lib/ionic/js/ionic.bundle.js"></script>
   <script src="../cordova.js"></script>
@@ -129,7 +133,7 @@
         </div>
         <div>
           <label style="color: white;">Promedio</label>
-          <rating ng-model="data1.rating1" max="data1.max1" readonly="readOnlyAvg"></rating>
+          <rating ng-model="data1.rating1" max="data1.max1" state-on="'ion-thumbsup'" readonly="readOnlyAvg"></rating>
           <!--<ionic-ratings ratingsobj='ratingsObjectAvg' index='$index'></ionic-ratings>-->
         </div>
 
